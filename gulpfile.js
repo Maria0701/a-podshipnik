@@ -11,7 +11,7 @@ import sourcemap from 'gulp-sourcemaps';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import rename from 'gulp-rename';
-// import csso from 'gulp-csso';
+import csso from 'gulp-csso';
 import posthtml from 'gulp-posthtml';
 import include from 'posthtml-include';
 import {deleteAsync} from 'del';
@@ -26,8 +26,8 @@ gulp.task('css', function() {
   .pipe(sourcemap.init())
   .pipe(sass())
   .pipe(postcss([autoprefixer()]))
-  //.pipe(csso())
-  //.pipe(rename('style.min.css'))
+  .pipe(csso())
+  .pipe(rename('style.min.css'))
   .pipe(sourcemap.write('.'))
   .pipe(gulp.dest('build/css'))
   .pipe(browserSync.stream());

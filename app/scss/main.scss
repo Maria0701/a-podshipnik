@@ -21,9 +21,10 @@ body {
   min-height: 100vh;
   color: var(--text);
   font-weight: 400;
-  font-family: "Lato", "Roboto", sans-serif;
+  font-family: "Montserrat", "Roboto", sans-serif;
   line-height: 1.4;
   scroll-padding-top: inherit;
+  background-color: var(--grey-2);
 }
 
 main {
