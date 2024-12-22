@@ -1,7 +1,36 @@
 <header class="header">
-  <div class="container header__container">
-    <a href="/" class="logo header__logo" title="Логотип компании">
-      <img src="/img/logo.svg" alt="" width="260" height="58" alt="Логотип компании А-подшипник">
-    </a>
+  <div class="header__top">
+    <div class="container">
+      <include src="app/html/utils/contacts/contacts.html" locals='{"className": "header__contacts"}'></include>
+      <button class="btn header__search-toggler">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="12" aria-hidden="true">
+          <use xlink:href="../img/sprite.svg#search"></use>
+        </svg>
+      </button>
+      <button class="btn header__menu-toggler">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="12" aria-hidden="true">
+          <use xlink:href="../img/sprite.svg#menu"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="header__btm">
+    <div class="container">
+      <a href="/" class="logo header__logo" title="Логотип компании">
+        <img src="/img/logo.svg" alt="" width="260" height="58" alt="Логотип компании А-подшипник">
+      </a>
+      <div class="header__search">
+        <form class="search">
+          <label class="search__label">
+            <input type="text" class="search__input" />
+          </label>
+          <button class="btn search__btn" aria-label="Искать">
+            <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="20" aria-hidden="true">
+              <use xlink:href="../img/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
   </div>
 </header>
