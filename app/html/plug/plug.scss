@@ -3,26 +3,26 @@ body {
   max-width: 100%;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     right: 0;
     width: 100px;
     height: 110px;
-    background-image: url('/img/podshipnik.svg');
+    background-image: url("/img/podshipnik.svg");
     background-position: bottom left;
     background-size: cover;
     background-repeat: no-repeat;
   }
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
     width: 80px;
     height: 90px;
-    background-image: url('/img/podshipnik.svg');
+    background-image: url("/img/podshipnik.svg");
     background-position: top right;
     background-size: cover;
     background-repeat: no-repeat;
@@ -83,7 +83,7 @@ main {
   transition: color 0.3s;
 
   &:hover {
-    color: var(--text)
+    color: var(--text);
   }
 }
 
@@ -95,21 +95,20 @@ main {
   margin-bottom: 20px;
 }
 
-
 /* HTML: <div class="loader"></div> */
 .loader {
   width: 200px;
   height: 20px;
   border-radius: 20px;
-  background:
-    repeating-linear-gradient(135deg, #80828F 0 10px, #b1b0b8 0 20px) 0/0% no-repeat,
+  background: repeating-linear-gradient(135deg, #80828f 0 10px, #b1b0b8 0 20px)
+      0/0% no-repeat,
     repeating-linear-gradient(135deg, #fff 0 10px, #fff 0 20px) 0/100%;
-  animation: l3 2s infinite;
+  animation: l3 40s infinite;
 }
 
 @keyframes l3 {
   100% {
-    background-size: 100%
+    background-size: 100%;
   }
 }
 
@@ -148,10 +147,8 @@ main {
     font-size: 24px;
   }
 
-
   .plug__center {
     margin-bottom: 100px;
-    
   }
 
   .loader {
@@ -173,13 +170,11 @@ main {
 }
 
 .lds-spinner {
-
   color: currentColor;
   display: inline-block;
   position: relative;
   width: 80px;
   height: 80px;
-
 }
 
 .lds-spinner div {
@@ -269,5 +264,3 @@ main {
     opacity: 0;
   }
 }
-
-
