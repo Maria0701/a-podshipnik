@@ -1,0 +1,46 @@
+.top-menu {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.top-menu__link {
+  display: flex;
+  color: var(--white);
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+.top-menu__it {
+  display: flex;
+}
+
+@media (max-width: calc($desktop - 1px)) {
+  .top-menu {
+    
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .top-menu__link {
+    padding-block: 5px;
+  }
+
+  .top-menu__link {
+    color: var(--white);
+  }
+}
+
+@media (min-width: $desktop) {
+  .top-menu {
+    gap: 20px;
+  }
+
+  .top-menu__link {
+    color: var(--text);
+    font-size: 16px;
+  }
+}

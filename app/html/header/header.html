@@ -20,17 +20,11 @@
         <img src="/img/logo.svg" alt="" width="260" height="58" alt="Логотип компании А-подшипник">
       </a>
       <div class="header__search">
-        <form class="search">
-          <label class="search__label">
-            <input type="text" class="search__input" />
-          </label>
-          <button class="btn search__btn" aria-label="Искать">
-            <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="20" aria-hidden="true">
-              <use xlink:href="../img/sprite.svg#search"></use>
-            </svg>
-          </button>
-        </form>
+        
+        <include src="app/html/utils/search/search.html" locals='{"className": "header__top-menu"}'></include>
       </div>
+      <include src="app/html/header/top-menu/top-menu.html" locals='{"className": "header__top-menu"}'></include>
+      <include src="app/html/header/users/users.html" locals='{"className": "header__users"}'></include>
     </div>
   </div>
 </header>
