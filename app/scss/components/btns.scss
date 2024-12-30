@@ -10,7 +10,31 @@
 }
 
 .btn--red {
-  width: 59px;
   color: var(--white);
   background-color: var(--red);
+}
+
+.btn--square {
+  justify-content: center;
+  aspect-ratio: 1;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.btn--bordered {
+  color: var(--white);
+  border: 1px solid var(--white);
+}
+
+.btn--dark {
+  color: var(--white);
+  background-color: var(--text);
+}
+
+.btn--rounded {
+  justify-content: center;
+  padding: 9px 20px;
+  font-weight: bold;
+  border-radius: 20px;
 }

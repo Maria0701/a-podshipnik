@@ -1,30 +1,57 @@
 <header class="header">
-  <div class="header__top">
+  <div class="header__mobile">
     <div class="container">
-      <include src="app/html/utils/contacts/contacts.html" locals='{"className": "header__contacts"}'></include>
-      <button class="btn header__search-toggler">
+      <a href="#" class="header__mobile-it contact place">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="contact__icon" width="8" height="12"
+          aria-hidden="true">
+          <use xlink:href="../img/sprite.svg#pin"></use>
+        </svg>
+        <span class="contact__text place__text">Санкт-Петербург</span>
+      </a>
+      <a class="btn btn--square btn--bordered" href="mailto:zakaz@www-a-podshipnik" title="Позвонить в компанию А-Подшипник">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="contact__icon" width="12" height="12" aria-hidden="true">
+          <use xlink:href="../img/sprite.svg#email"></use>
+        </svg>
+      </a>
+      <a class="btn btn--square btn--bordered" href="tel:+7999999999" title="Позвонить в компанию А-Подшипник">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="contact__icon" width="12" height="12" aria-hidden="true">
+          <use xlink:href="../img/sprite.svg#tel"></use>
+        </svg>
+      </a>
+      <button class="btn btn--square btn--bordered header__search-toggler">
         <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="12" aria-hidden="true">
           <use xlink:href="../img/sprite.svg#search"></use>
         </svg>
       </button>
-      <button class="btn header__menu-toggler">
+      <button class="btn btn--square btn--dark header__menu-toggler">
         <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="12" aria-hidden="true">
           <use xlink:href="../img/sprite.svg#menu"></use>
         </svg>
       </button>
     </div>
   </div>
-  <div class="header__btm">
+  <div class="header__top">
     <div class="container">
+      <include src="app/html/utils/contacts/contacts.html" locals='{"className": "header__contacts"}'></include>
+      <button class="btn btn--red btn--rounded header__order"><span>Заказать звонок</span></button>
+    </div>
+  </div>
+  <div class="header__btm">
+    <div class="container header__btm-container">
       <a href="/" class="logo header__logo" title="Логотип компании">
         <img src="/img/logo.svg" alt="" width="260" height="58" alt="Логотип компании А-подшипник">
       </a>
       <div class="header__search">
-        
         <include src="app/html/utils/search/search.html" locals='{"className": "header__top-menu"}'></include>
       </div>
       <include src="app/html/header/top-menu/top-menu.html" locals='{"className": "header__top-menu"}'></include>
       <include src="app/html/header/users/users.html" locals='{"className": "header__users"}'></include>
+      <button class="btn btn--red btn--rounded header__catalog-toggler">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="12" aria-hidden="true">
+          <use xlink:href="../img/sprite.svg#catalog"></use>
+        </svg>
+        <span>Каталог</span>
+      </button>
     </div>
   </div>
 </header>

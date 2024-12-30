@@ -6,3 +6,25 @@
   color: var(--white);
   text-decoration: none;
 }
+
+.contacts {
+  display: flex;
+}
+
+@media (max-width: calc($desktop - 1px)) {
+  .contact {
+    padding-block: 5px;
+  }
+
+  .contacts {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .contacts {
+    align-items: center;
+    gap: 52px;
+  }
+}
