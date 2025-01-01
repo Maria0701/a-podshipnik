@@ -1,33 +1,40 @@
 <header class="header">
   <div class="header__mobile">
     <div class="container">
+      <a href="#" class="header__mobile-logo" title="">
+        <img src="/img/logo-small.png" alt="" width="30" height="30">
+      </a>
       <a href="#" class="header__mobile-it contact place">
-        <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="contact__icon" width="8" height="12"
-          aria-hidden="true">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="contact__icon" width="8" height="12" aria-hidden="true">
           <use xlink:href="../img/sprite.svg#pin"></use>
         </svg>
         <span class="contact__text place__text">Санкт-Петербург</span>
       </a>
-      <a class="btn btn--square btn--bordered" href="mailto:zakaz@www-a-podshipnik" title="Позвонить в компанию А-Подшипник">
-        <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="contact__icon" width="12" height="12" aria-hidden="true">
-          <use xlink:href="../img/sprite.svg#email"></use>
-        </svg>
-      </a>
-      <a class="btn btn--square btn--bordered" href="tel:+7999999999" title="Позвонить в компанию А-Подшипник">
-        <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="contact__icon" width="12" height="12" aria-hidden="true">
-          <use xlink:href="../img/sprite.svg#tel"></use>
-        </svg>
-      </a>
-      <button class="btn btn--square btn--bordered header__search-toggler">
-        <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="12" aria-hidden="true">
-          <use xlink:href="../img/sprite.svg#search"></use>
-        </svg>
-      </button>
-      <button class="btn btn--square btn--dark header__menu-toggler">
-        <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="12" aria-hidden="true">
-          <use xlink:href="../img/sprite.svg#menu"></use>
-        </svg>
-      </button>
+      <div class="header__mobile-btns">
+        <a class="btn btn--square btn--bordered header__mobile-btn" href="mailto:zakaz@www-a-podshipnik"
+          title="Позвонить в компанию А-Подшипник">
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="contact__icon" width="12" height="12"
+            aria-hidden="true">
+            <use xlink:href="../img/sprite.svg#email"></use>
+          </svg>
+        </a>
+        <a class="btn btn--square btn--bordered header__mobile-btn" href="tel:+7999999999" title="Позвонить в компанию А-Подшипник">
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="contact__icon" width="12" height="12"
+            aria-hidden="true">
+            <use xlink:href="../img/sprite.svg#tel"></use>
+          </svg>
+        </a>
+        <button class="btn btn--square btn--bordered header__search-toggler">
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="12" aria-hidden="true">
+            <use xlink:href="../img/sprite.svg#search"></use>
+          </svg>
+        </button>
+        <button class="btn btn--square btn--dark header__menu-toggler">
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="12" aria-hidden="true">
+            <use xlink:href="../img/sprite.svg#menu"></use>
+          </svg>
+        </button>
+      </div>
     </div>
   </div>
   <div class="header__top">
@@ -38,11 +45,8 @@
   </div>
   <div class="header__btm">
     <div class="container header__btm-container">
-      <a href="/" class="logo header__logo" title="Логотип компании">
-        <img src="/img/logo.svg" alt="" width="260" height="58" alt="Логотип компании А-подшипник">
-      </a>
       <div class="header__search">
-        <include src="app/html/utils/search/search.html" locals='{"className": "header__top-menu"}'></include>
+        <include src="app/html/utils/search/search.html" locals='{"className": "header__search"}'></include>
       </div>
       <include src="app/html/header/top-menu/top-menu.html" locals='{"className": "header__top-menu"}'></include>
       <include src="app/html/header/users/users.html" locals='{"className": "header__users"}'></include>
@@ -50,7 +54,7 @@
         <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="12" aria-hidden="true">
           <use xlink:href="../img/sprite.svg#catalog"></use>
         </svg>
-        <span>Каталог</span>
+        <span>Каталог товаров</span>
       </button>
     </div>
   </div>

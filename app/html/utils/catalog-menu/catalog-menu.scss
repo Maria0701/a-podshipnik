@@ -14,6 +14,7 @@
   flex-grow: 1;
   gap: 16px;
   padding-block: 5px;
+
   font-size: 15px;
   color: var(--text);
   text-decoration: none;
@@ -24,12 +25,16 @@
   transform: rotate(-90deg);
 }
 
+.catalog-menu__sub {
+  height: 0;
+  overflow: hidden;
+}
+
 @media (hover:hover) {
-  
+
   .catalog-menu__it:hover .catalog-menu__link,
   .catalog-menu__sub-it:hover .catalog-menu__sub-link {
     color: var(--red);
-
   }
 
   .catalog-menu__it:hover .catalog-menu__btn {
@@ -51,6 +56,19 @@
 .catalog-menu__img {
   width: 25px;
   height: 25px;
+}
+
+@media (max-width: calc($desktop - 1px)) {
+
+  .catalog-menu__link,
+  .catalog-menu__sub-link {
+    padding-inline: 10px;
+  }
+
+  .catalog-menu__it,
+  .catalog-menu__sub-it {
+    padding-right: 10px;
+  }
 }
 
 @media (min-width: $desktop) {

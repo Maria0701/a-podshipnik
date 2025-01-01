@@ -3,16 +3,7 @@
   flex-direction: column;
 }
 
-.header__mobile {
-  background-color: var(--grey);
 
-  .container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding-block: 5px;
-  }
-}
 
 .header__top {
   background-color: var(--grey);
@@ -27,33 +18,96 @@
 }
 
 @media (max-width: calc($desktop - 1px)) {
-  .top-menu {
+  .header__top-menu {
+    position: absolute;
+    top:40px;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    order: 3;
+    background-color: var(--grey);
+    transform: translate3d(-200svw, 0,0);
+    transition: transform 0.3s;
+  }
+
+  .header__top {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    width: 100%;
+    order: 1;
+    padding-block: 50px;
+    transform: translate3d(-200svw, 0,0);
+    transition: transform 0.3s;
+  }
+
+  .header__mobile {
+    background-color: var(--grey);
+    padding-block: 5px;
+  
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  .header__mobile-logo {
     display: none;
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    margin-right: 220px;
+  }
+
+  .header__mobile-btns {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .header.opened {
+    .header__top-menu,
+    .header__top {
+      transform: translate3d(0,0,0);
+    }
+
+    .header__catalog-toggler {
+      position: absolute;
+      left: 56px;
+      top: 4px;
+      z-index: 2;
+    }
+
+    .header__mobile-it {
+      display: none;
+    }
+
+    .header__mobile-logo {
+      display: flex;
+    }
+
+    .header__mobile-btn {
+      display: none;
+    }
   }
 
   .header__search {
     display: none;
   }
 
-  .header__logo {
-    display: flex;
-    margin-right: auto;
-    width: 155px;
-    height: 35px;
+  .header__users {
+    margin-left: auto;
   }
 
   .header__btm {
-    padding-block: 8px;
+    padding-block: 10px;
+
   }
 
   .header__btm-container {
     flex-wrap: wrap;
-    gap: 8px;
-  }
-
-  .header__top {
-    order: 1;
-    padding-block: 50px;
+    gap: 10px;
   }
 
   .header__contacts {
@@ -72,12 +126,12 @@
     gap: 52px;
   }
 
-  .header__catalog-toggler {
-    display: none;;
+  .header__mobile {
+    display: none;
   }
 
-  .header__logo { 
-    display: none;
+  .header__catalog-toggler {
+    display: none;;
   }
 
   .header__search {

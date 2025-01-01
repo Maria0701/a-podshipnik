@@ -1,6 +1,6 @@
 .top-menu {
   display: flex;
-  align-items: center;
+
   margin: 0;
   padding: 0;
   list-style: none;
@@ -21,13 +21,13 @@
 
 @media (max-width: calc($desktop - 1px)) {
   .top-menu {
-    
     flex-direction: column;
     gap: 5px;
   }
 
   .top-menu__link {
     padding-block: 5px;
+    padding-inline: var(--padding);
   }
 
   .top-menu__link {
@@ -38,6 +38,7 @@
 @media (min-width: $desktop) {
   .top-menu {
     gap: 20px;
+    align-items: center;
   }
 
   .top-menu__link {
