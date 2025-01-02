@@ -13,6 +13,7 @@
 .btn--red {
   color: var(--white);
   background-color: var(--red);
+  transition: background-color 0.3s;
 }
 
 .btn--square {
@@ -38,4 +39,35 @@
   padding: 9px 20px;
   font-weight: bold;
   border-radius: 20px;
+}
+
+.btn--white {
+  color: var(--text);
+  background-color: var(--white);
+}
+
+.btn--arr {
+  width: 40px;
+  height: 40px;
+  color: var(--red);
+  background-color: var(--white);
+  border: 2px solid var(--red);
+  border-radius: 10px;
+  justify-content: center;
+  transition: border-color 0.3s, color 0.3s;
+}
+
+.btn--right {
+  transform: scale(-1, 1);
+}
+
+@media (hover:hover) {
+  .btn--red:hover {
+    background-color: var(--red-dark);
+  }
+
+  .btn--arr:hover {
+    color: var(--red-dark);
+    border-color: var(--red-dark); 
+  }
 }

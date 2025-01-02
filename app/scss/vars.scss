@@ -2,6 +2,7 @@
   --white: #ffffff;
   --text: #313036;
   --red: #a80000;
+  --red-dark: #731010;
   --grey: #80828F;
   --grey-2: #F2F2F2;
   --grey-red: #EBDADA;
@@ -13,7 +14,7 @@
 
 $tablet: 768px;
 $desktop: 1024px;
-$container: 1450px;
+$container: 1460px;
 
 
 @media (min-width: $tablet) {

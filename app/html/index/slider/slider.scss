@@ -1,0 +1,38 @@
+.top-slider {
+  position: relative;
+}
+
+.top-slider__wrapper {
+  display: flex;
+}
+
+.top-slider__it {
+  flex-basis: 100%;
+  flex-shrink: 0;
+}
+
+.top-slider__slider {
+  overflow: hidden;
+}
+
+.top-slider__nums {
+  position: absolute;
+  left: var(--padding);
+  bottom: 30px;
+}
+
+.top-slider__btn {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.top-slider__btn.btn--left {
+  left: -10px;
+}
+
+.top-slider__btn.btn--right {
+  right: -10px;
+  transform: scale(-1, 1) translateY(-50%);
+}

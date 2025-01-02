@@ -1,0 +1,11 @@
+<each loop="item in arr">
+<div class="top-slide {{className}}" style="background-image: url('/img/slide-bg.svg');">
+  <div class="top-slide__content">
+    <div class="top-slide__name">{{item.name}}</div>
+    <div class="top-slide__text">{{item.text}}</div>
+    <div class="top-slide__btn btn btn--white btn--rounded">В каталог</div>
+  </div>
+  <img class="top-slide__img" src="/img/{{item.img}}" alt="" width="714" height="518" alt="{{item.text}}">
+  <a href="#" class="top-slide__link" title="{{item.text}}"></a>
+</div>
+</each>
