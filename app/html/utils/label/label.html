@@ -1,0 +1,23 @@
+<each loop="item in arr">
+  <label class="label">
+    <span class="label__wrapper">
+      <if condition="item.type === 'select'">
+        <select class="label__input" name="{{item.name}}">
+          <option value="0">---</option>
+          <each loop="opt in item.opts">
+            <option value="{{opt.value}}">{{opt.name}}</option>
+          </each>
+        </select>
+      </if>
+      <else>
+        <input
+          class="label__input"
+          type="{{item.type}}"
+          placeholder="{{item.placeholder}}"
+          name="{{item.name}}"
+        />
+      </else>
+    </span>
+    <span class="label__name">{{item.name}}</span>
+  </label>
+</each>

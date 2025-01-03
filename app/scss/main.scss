@@ -15,7 +15,7 @@ html {
 
 body {
   position: relative;
-  display:flex;
+  display: flex;
   flex-direction: column;
   margin: 0;
   min-height: 100vh;
@@ -39,8 +39,14 @@ img {
   object-fit: contain;
 }
 
-button {
+button,
+input,
+select {
   appearance: none;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
 }
 
 .visually-hidden:not(:focus) {
@@ -58,11 +64,10 @@ button {
 
 .container {
   width: 100%;
-  max-width:  $container;
+  max-width: $container;
   padding-inline: var(--padding);
   margin: 0 auto;
 }
-
 
 .overlay {
   width: 100%;
@@ -72,10 +77,32 @@ button {
   left: 0;
   right: 0;
   opacity: 0.6;
-  background: var(--black, #231F20); 
+  background: var(--black, #231f20);
   transition: height 0.6s;
 
   top: 0;
   height: 100%;
   z-index: 10;
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.bg-red {
+  background-color: var(--red);
+}
+
+.mb-30-20 {
+  margin-bottom: 30px;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+@media (min-width: $desktop) {
+  .mb-30-20 {
+    margin-bottom: 20px;
+  }
 }

@@ -1,0 +1,48 @@
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label__name {
+  order: -1;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.label__wrapper {
+  display: flex;
+  min-height: 35px;
+  background-color: var(--white);
+  border-radius: 20px;
+  border: 2px solid var(--grey);
+  transition: border-color 0.3s;
+
+  &:hover,
+  &:focus,
+  &:focus-within {
+    outline: none;
+    border-color: var(--text);
+  }
+}
+
+.label__input {
+  padding: 8px 15px 7px 15px;
+  height: 100%;
+  width: 100%;
+  font-size: 14px;
+  border: 0;
+  background-color: transparent;
+
+  &:hover,
+  &:focus,
+  &:focus-within {
+    outline: none;
+  }
+}
+
+@media (min-width: $desktop) {
+  .label__wrapper {
+    min-height: 40px;
+  }
+}

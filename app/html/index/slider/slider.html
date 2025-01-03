@@ -1,7 +1,8 @@
-<div class="top-slider">
+<div class="top-slider {{className}}">
   <div class="top-slider__slider">
     <div class="top-slider__wrapper">
-      <include locals='{
+      <include
+        locals='{
         "className": "top-slider__it",
         "arr": [
           {
@@ -44,18 +45,30 @@
             "img": "slider.png"
           }
         ]
-      }' src="app/html/index/slider/slide/slide.html"></include>
+      }'
+        src="app/html/index/slider/slide/slide.html"
+      ></include>
     </div>
   </div>
   <div class="top-slider__nums"></div>
   <div class="top-slider__btns">
     <button class="btn btn--arr btn--left top-slider__btn">
-      <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10" aria-hidden="true">
+      <svg
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        width="10"
+        height="10"
+        aria-hidden="true"
+      >
         <use xlink:href="/img/sprite.svg#chevron"></use>
       </svg>
     </button>
     <button class="btn btn--arr btn--right top-slider__btn">
-      <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10" aria-hidden="true">
+      <svg
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        width="10"
+        height="10"
+        aria-hidden="true"
+      >
         <use xlink:href="/img/sprite.svg#chevron"></use>
       </svg>
     </button>

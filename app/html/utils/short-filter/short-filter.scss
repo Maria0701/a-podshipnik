@@ -1,0 +1,68 @@
+.short-filter {
+  position: relative;
+  padding: 10px 10px 20px 10px;
+  border-radius: 20px;
+  background-color: var(--white);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 292px;
+    height: 333px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 275 305'%3E%3Cpath d='M259.695 109.373C259.695 36.818 201.56-22 129.848-22 58.135-22 0 36.818 0 109.373c0 72.556 58.135 131.374 129.848 131.374 41.258 0 63.755-17.073 63.755-17.073l65.735 75.327c5.712 6.545 15.724 7.017 22.027 1.039 5.943-5.638 6.382-14.961.995-21.132l-64.138-73.475c25.457-23.984 41.473-58.09 41.473-96.06Zm-229.692 0c0-55.198 44.79-100.105 99.845-100.105 55.054 0 99.845 44.907 99.845 100.105 0 55.199-44.791 100.106-99.845 100.106-55.055 0-99.845-44.908-99.845-100.106Z' fill='%23F2F2F2'/%3E%3C/svg%3E");
+    max-height: 100%;
+    overflow: hidden;
+  }
+}
+
+.short-filter__btns {
+  position: relative;
+  display: flex;
+  gap: 10px 20px;
+  justify-content: space-between;
+}
+
+.short-filter__name {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.short-filter__fieldset {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tablet) {
+  .short-filter__fieldset {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+@media (min-width: $desktop) {
+  .short-filter {
+    padding: 30px 40px 40px 40px;
+
+    &::before {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .short-filter__name {
+    margin-bottom: 20px;
+  }
+
+  .short-filter__fieldset {
+    margin-bottom: 24px;
+  }
+}

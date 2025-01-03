@@ -1,5 +1,179 @@
-<div class="short-filter">
+<div class="short-filter {{className}}">
+  <div class="short-filter__name">Быстрый подбор подшипников</div>
   <form action="" class="short-filter__form form">
-    <label></label>
+    <div class="short-filter__fieldset">
+      <include
+        locals='{
+      "className": "short-filter__it",
+      "arr": [
+        {
+          "name": "Внутренний диаметр, мм", 
+          "name1":"inner",
+          "type": "select",
+          "value": "",
+          "adsClass": "",
+          "placeholder": "",
+          "opts": [
+            {
+              "name": "15",
+              "value": "15"
+            },
+            {
+              "name": "20",
+              "value": "20"
+            },
+            {
+              "name": "25",
+              "value": "25"
+            },
+            {
+              "name": "30",
+              "value": "30"
+            },
+            {
+              "name": "35",
+              "value": "35"
+            },
+            {
+              "name": "40",
+              "value": "40"
+            },
+            {
+              "name": "45",
+              "value": "45"
+            }
+          ]
+        },
+        {
+          "name": "Наружный диаметр, мм", 
+          "type": "select",
+          "name1":"outer",
+          "value": "",
+          "adsClass": "",
+          "placeholder": "",
+          "opts": [
+            {
+              "name": "15",
+              "value": "15"
+            },
+            {
+              "name": "20",
+              "value": "20"
+            },
+            {
+              "name": "25",
+              "value": "25"
+            },
+            {
+              "name": "30",
+              "value": "30"
+            },
+            {
+              "name": "35",
+              "value": "35"
+            },
+            {
+              "name": "40",
+              "value": "40"
+            },
+            {
+              "name": "45",
+              "value": "45"
+            }
+          ]
+        },
+        {
+          "name": "Ширина, мм", 
+          "type": "select",
+          "name1":"width",
+          "value": "",
+          "adsClass": "",
+          "placeholder": "",
+          "opts": [
+            {
+              "name": "15",
+              "value": "15"
+            },
+            {
+              "name": "20",
+              "value": "20"
+            },
+            {
+              "name": "25",
+              "value": "25"
+            },
+            {
+              "name": "30",
+              "value": "30"
+            },
+            {
+              "name": "35",
+              "value": "35"
+            },
+            {
+              "name": "40",
+              "value": "40"
+            },
+            {
+              "name": "45",
+              "value": "45"
+            }
+          ]
+        },
+        {
+          "name": "Производитель", 
+          "name1":"brand",
+          "type": "select",
+          "value": "",
+          "adsClass": "", 
+          "placeholder": "",
+          "opts": [
+          {
+            "name": "FAG",
+            "value": "fag"
+          },
+          {
+            "name": "SKF",
+            "value": "skf"
+          },
+          {
+            "name": "Craft",
+            "value": "craft"
+          },
+          {
+            "name": "CSB",
+            "value": "csb"
+          },
+          {
+            "name": "CTS",
+            "value": "cts"
+          },
+          {
+            "name": "Detool",
+            "value": "detool"
+          },
+          {
+            "name": "Iskra",
+            "value": "iskra"
+          }
+        ]
+        },
+        {
+          "name": "Наименование", 
+          "type": "text",
+          "value": "",
+          "adsClass": "",
+          "placeholder": "",
+          "opts": ""
+        }
+      ]
+    }'
+        src="app/html/utils/label/label.html"
+      ></include>
+    </div>
+    <div class="short-filter__btns">
+      <button class="btn btn--rounded btn--grey">Сбросить фильтр</button>
+      <button class="btn btn--rounded btn--red">Показать</button>
+    </div>
   </form>
 </div>
