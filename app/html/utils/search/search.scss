@@ -1,0 +1,24 @@
+.search {
+  display: flex;
+  border: 2px solid var(--red);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.search__label {
+  display: flex;
+  flex-grow: 1;
+  background-color: var(--white);
+}
+
+.search__input {
+  flex-grow: 1;
+  padding: 15px 20px;
+  border: 0;
+}
+
+.search__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

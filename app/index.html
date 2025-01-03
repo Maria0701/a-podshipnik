@@ -11,11 +11,29 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
 </head>
+
 <body>
-  <include src="app/html/header/header.html" locals='{"index": ""}'></include>
-  <main class="container">
-    <include src="app/html/plug/plug.html" locals='{"index": ""}'></include>
-  </main>
+  <div class="page">
+    <div class="page__aside">
+      <div class="page__aside-wrapper">
+        <a class="page__logo logo" href="#" title="">
+          <img src="/img/logo.svg" alt="" width="260" height="58" alt="Логотип компании А-подшипник">
+        </a>
+        <div class=" page__catalog">
+          <include src="app/html/utils/catalog-menu/catalog-menu.html" locals='{"index": ""}'></include>
+        </div>
+      </div>
+    </div>
+    <div class="page__center">
+      <include src="app/html/header/header.html" locals='{"index": ""}'></include>
+      <main>
+        <include src="app/html/index/index.html" locals='{"index": ""}'></include>
+
+      </main>
+    </div>
+  </div>
+
   <script src="js/index.js"></script>
 </body>
+
 </html>
