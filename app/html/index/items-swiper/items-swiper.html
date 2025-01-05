@@ -1,0 +1,158 @@
+<section class="{{className}}">
+  <h2 class="h2 mb-18">Хит продаж</h2>
+  <div class="items-swiper">
+    <div class="items-swiper__slider">
+      <div class="items-swiper__wrapper">
+        <include
+          locals='{
+            "className": "items-swiper__it",
+            "arr": [       
+              {
+                "name": "Шариковый подшипник 51206 SKF", 
+                "price": "3383",
+                "img": "cat1.png",
+                "producer": "producer1.png",
+                "inCart": "true",
+                "tags": [
+                  {
+                    "name": "В наличии",
+                    "ico": "tick",
+                    "kind": "green"
+                  },
+                  {
+                    "name": "ХИТ",
+                    "ico": "",
+                    "kind": "red"
+                  },
+                  {
+                    "name": "Новинка",
+                    "ico": "",
+                    "kind": "yellow"
+                  }
+                ]
+              },
+              {
+                "name": "Шарикоподшипник 51206 SKF", 
+                "price": "78 383",
+                "img": "cat2.png",
+                "producer": "producer2.png",
+                "inCart": "false",
+                "tags": [
+                  {
+                    "name": "В наличии",
+                    "ico": "tick",
+                    "kind": "green"
+                  }
+                ]
+              },
+              {
+                "name": "Подшипник 51206 SKF", 
+                "price": "1 283",
+                "img": "cat3.png",
+                "producer": "producer3.png",
+                "inCart": "false",
+                "tags": [
+                  {
+                    "name": "В наличии",
+                    "ico": "tick",
+                    "kind": "green"
+                  },
+                  {
+                    "name": "ХИТ",
+                    "ico": "",
+                    "kind": "red"
+                  }
+                ]
+              },
+              {
+                "name": "Нержавеющий подшипник 6000 SKF", 
+                "price": "3383",
+                "img": "cat4.png",
+                "producer": "producer4.png",
+                "inCart": "false",
+                "tags": [
+                  {
+                    "name": "В наличии",
+                    "ico": "tick",
+                    "kind": "green"
+                  }
+                ]
+              },
+              {
+                "name": "Подшипник 51206 SKF", 
+                "price": "3383",
+                "img": "cat5.png",
+                "producer": "producer5.png",
+                "inCart": "true",
+                "tags": [
+                  {
+                    "name": "В наличии",
+                    "ico": "tick",
+                    "kind": "green"
+                  },
+                  {
+                    "name": "ХИТ",
+                    "ico": "",
+                    "kind": "red"
+                  },
+                  {
+                    "name": "Новинка",
+                    "ico": "",
+                    "kind": "yellow"
+                  }
+                ]
+              },
+              {
+                "name": "Шариковый подшипник 51206 SKF", 
+                "price": "3383",
+                "img": "cat6.png",
+                "producer": "producer6.png",
+                "inCart": "true",
+                "tags": [
+                  {
+                    "name": "В наличии",
+                    "ico": "tick",
+                    "kind": "green"
+                  },
+                  {
+                    "name": "ХИТ",
+                    "ico": "",
+                    "kind": "red"
+                  },
+                  {
+                    "name": "Новинка",
+                    "ico": "",
+                    "kind": "yellow"
+                  }
+                ]
+              }
+            ]
+          }'
+          src="app/html/utils/short-card/short-card.html"
+        ></include>
+      </div>
+    </div>
+    <div class="items-swiper__btns">
+      <button class="btn btn--arr btn--left items-swiper__btn">
+        <svg
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="10"
+          height="10"
+          aria-hidden="true"
+        >
+          <use xlink:href="/img/sprite.svg#chevron"></use>
+        </svg>
+      </button>
+      <button class="btn btn--arr btn--right items-swiper__btn">
+        <svg
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="10"
+          height="10"
+          aria-hidden="true"
+        >
+          <use xlink:href="/img/sprite.svg#chevron"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>

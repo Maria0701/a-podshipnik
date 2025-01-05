@@ -42,6 +42,10 @@
   margin-bottom: 20px;
 }
 
+.short-filter__it .label__wrapper {
+  border-color: var(--grey);
+}
+
 @media (min-width: $tablet) {
   .short-filter__fieldset {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));

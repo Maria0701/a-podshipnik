@@ -66,6 +66,22 @@
   transform: scale(-1, 1);
 }
 
+.btn--buy {
+  justify-content: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 35px;
+  padding: 9px;
+  color: var(--white);
+  background-color: var(--red);
+  border: 2px solid var(--red);
+  border-radius: 20px;
+}
+
+.btn__in {
+  display: none;
+}
+
 @media (hover: hover) {
   .btn--red:hover {
     background-color: var(--red-dark);

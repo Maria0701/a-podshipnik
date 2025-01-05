@@ -1,0 +1,20 @@
+.items-swiper {
+  min-width: 100%;
+  width: 100%;
+}
+
+.items-swiper__slider {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.items-swiper__wrapper {
+  display: flex;
+  gap: 23px;
+}
+
+.items-swiper__it {
+  flex-basis: 252px;
+  flex-shrink: 0;
+}

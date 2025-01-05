@@ -3,10 +3,15 @@
 @import "main.scss";
 @import "components/btns.scss";
 @import "components/page.scss";
+@import "components/tag.scss";
 @import "../html/utils/search/search.scss";
 @import "../html/utils/contacts/place.scss";
 @import "../html/utils/contacts/contacts.scss";
 @import "../html/utils/label/label.scss";
+@import "../html/utils/qty/qty.scss";
+@import "components/form.scss";
+@import "../html/utils/form-manager/form-manager.scss";
+@import "../html/utils/short-card/short-card.scss";
 @import "../html/header/top-menu/top-menu.scss";
 @import "../html/header/users/users-it/users-it.scss";
 @import "../html/header/users/users.scss";
@@ -17,4 +22,6 @@
 @import "../html/index/slider/slider.scss";
 @import "../html/index/advantages/advantage/advantage.scss";
 @import "../html/index/advantages/advantages.scss";
+@import "../html/index/open-form/open-form.scss";
+@import "../html/index/items-swiper/items-swiper.scss";
 // @import "../html/plug/plug.scss";

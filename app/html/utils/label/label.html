@@ -1,6 +1,20 @@
 <each loop="item in arr">
-  <label class="label">
+  <label class="label {{className}}">
     <span class="label__wrapper">
+      <if condition="item.ico === ''"></if>
+      <else>
+        <span class="label__ico">
+          <svg
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            class="contact__icon"
+            width="16"
+            height="16"
+            aria-hidden="true"
+          >
+            <use xlink:href="../img/sprite.svg#{{item.ico}}"></use>
+          </svg>
+        </span>
+      </else>
       <if condition="item.type === 'select'">
         <select class="label__input" name="{{item.name}}">
           <option value="0">---</option>

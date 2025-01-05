@@ -1,0 +1,35 @@
+.qty {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  padding: 3px;
+  border-radius: 20px;
+  background-color: var(--light-grey);
+  width: fit-content;
+}
+
+.qty__btn {
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  font-weight: 700;
+  color: var(--white);
+  border-radius: 50%;
+  background-color: var(--blue-grey);
+}
+
+.qty__input {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  background-color: transparent;
+  border: 0;
+}
+
+.qty__label {
+  display: flex;
+  flex-grow: 1;
+}
