@@ -76,6 +76,7 @@
   background-color: var(--red);
   border: 2px solid var(--red);
   border-radius: 20px;
+  transition: background-color 0.3s, border-color 0.3s;
 }
 
 .btn__in {
@@ -89,6 +90,11 @@
 
   .btn--arr:hover {
     color: var(--red-dark);
+    border-color: var(--red-dark);
+  }
+
+  .btn--buy:hover {
+    background-color: var(--red-dark);
     border-color: var(--red-dark);
   }
 }

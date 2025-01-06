@@ -1,0 +1,25 @@
+<each loop="item in arr">
+  <div class="short-category bg-white {{className}}">
+    <a href="#" class="short-category__img" title="">
+      <img
+        src="/img/{{item.img}}"
+        alt="{{item.name}}"
+        width="124"
+        height="150"
+      />
+    </a>
+    <a href="#" class="short-category__name" title="{{item.name}}"
+      >{{item.name}}</a
+    >
+    <div class="short-category__links">
+      <if condition="item.tags === ''"></if>
+      <else>
+        <each loop="tag in item.tags">
+          <a href="#" class="short-category__link" title="{{tag.name}}"
+            >{{tag.name}}</a
+          >
+        </each>
+      </else>
+    </div>
+  </div>
+</each>

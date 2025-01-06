@@ -1,5 +1,5 @@
 <each loop="item in arr">
-  <article class="short-card bg-white">
+  <article class="short-card bg-white {{className}}">
     <if condition="item.tags === ''"></if>
     <else>
       <div class="short-card__tags">
@@ -88,5 +88,6 @@
         </div>
       </else>
     </div>
+    <a href="#" class="short-card__link"></a>
   </article>
 </each>

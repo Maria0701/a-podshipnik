@@ -1,4 +1,5 @@
 .items-swiper {
+  position: relative;
   min-width: 100%;
   width: 100%;
 }
@@ -17,4 +18,17 @@
 .items-swiper__it {
   flex-basis: 252px;
   flex-shrink: 0;
+}
+
+.items-swiper__btn {
+  position: absolute;
+  top: 189px;
+}
+
+.items-swiper__btn.btn--right {
+  right: -10px;
+}
+
+.items-swiper__btn.btn--left {
+  left: -10px;
 }

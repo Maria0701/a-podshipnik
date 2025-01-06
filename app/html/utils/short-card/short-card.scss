@@ -7,6 +7,12 @@
   border: 1px solid var(--white);
 }
 
+@media (hover: hover) {
+  .short-card:hover {
+    border-color: var(--blue-gray);
+  }
+}
+
 .short-card__btns {
   display: flex;
   align-items: center;
@@ -86,6 +92,7 @@
   align-items: center;
   justify-content: center;
   aspect-ratio: 1;
+  margin-bottom: 27px;
 
   img {
     width: 100%;
@@ -93,4 +100,12 @@
     max-height: 100%;
     object-fit: contain;
   }
+}
+
+.short-card__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 65px;
 }

@@ -11,6 +11,21 @@
   overflow: hidden;
 }
 
+.top-slide--middle {
+  min-height: 250px;
+  background-color: var(--blue-grey);
+
+  .top-slide__content {
+    max-width: 570px;
+  }
+
+  .top-slide__img {
+    max-width: 50%;
+    bottom: -25%;
+    max-height: unset;
+  }
+}
+
 @media (hover: hover) {
   .top-slide:hover .top-slide__btn {
     opacity: 0.8;
@@ -44,7 +59,7 @@
   transition: opacity 0.3s;
 }
 
-.top-slide__img{
+.top-slide__img {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -74,5 +89,9 @@
 
   .top-slide__text {
     font-size: 16px;
+  }
+
+  .top-slide--middle {
+    min-height: 300px;
   }
 }
