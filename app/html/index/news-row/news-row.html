@@ -1,0 +1,44 @@
+<section class="{{className}} news-row">
+  <h2 class="h2 mb-18">Новости компании</h2>
+  <div class="news-row__row">
+    <include
+      locals='{
+      "className": "news-row__it",
+      "arr": [       
+        {
+          "name": "График работы офиса на новогодние праздники", 
+          "img": "news1.jpg",
+          "text": "",
+          "date": "24.06.2024",
+          "num": "1727"
+        },
+        {
+          "name": "С днём народного единства!", 
+          "img": "news2.jpg",
+          "text": "",
+          "date": "24.05.2024",
+          "num": "1717"
+        },
+        {
+          "name": "График работы на майские праздники", 
+          "img": "news3.jpg",
+          "text": "",
+          "date": "22.05.2024",
+          "num": "17"
+        },
+        {
+          "name": "Открываем новый офис в Москве", 
+          "img": "news4.jpg",
+          "text": "",
+          "date": "20.05.2024",
+          "num": "1717"
+        }
+      ]
+    }'
+      src="app/html/utils/news-short/news-short.html"
+    ></include>
+  </div>
+  <div class="news-row__btns">
+    <a href="#" class="btn btn--red btn--rounded" title="">Все новости</a>
+  </div>
+</section>

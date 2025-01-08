@@ -1,39 +1,57 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>Магазин подшипников</title>
+    <meta
+      name="description"
+      content="Магазин подшипников в Санкт-Петербурге. Большой выбор, подбор размеров, доставка в любой регион России"
+    />
+    <include src="app/html/meta.html"></include>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>Магазин подшипников</title>
-  <meta name="description"
-    content="Магазин подшипников в Санкт-Петербурге. Большой выбор, подбор размеров, доставка в любой регион России">
-  <include src="app/html/meta.html"></include>
-  <link rel="stylesheet" href="css/style.min.css">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="format-detection" content="telephone=no">
-</head>
-
-<body>
-  <div class="page">
-    <div class="page__aside">
-      <div class="page__aside-wrapper">
-        <a class="page__logo logo" href="#" title="">
-          <img src="/img/logo.svg" alt="" width="260" height="58" alt="Логотип компании А-подшипник">
-        </a>
-        <div class=" page__catalog">
-          <include src="app/html/utils/catalog-menu/catalog-menu.html" locals='{"index": ""}'></include>
+  <body>
+    <div class="page">
+      <div class="page__aside">
+        <div class="page__aside-wrapper">
+          <a class="page__logo logo" href="#" title="">
+            <img
+              src="/img/logo.svg"
+              alt=""
+              width="260"
+              height="58"
+              alt="Логотип компании А-подшипник"
+            />
+          </a>
+          <div class="page__catalog">
+            <include
+              src="app/html/utils/catalog-menu/catalog-menu.html"
+              locals='{"index": ""}'
+            ></include>
+          </div>
         </div>
       </div>
+      <div class="page__center">
+        <include
+          src="app/html/header/header.html"
+          locals='{"index": ""}'
+        ></include>
+        <main class="main">
+          <include
+            src="app/html/index/index.html"
+            locals='{"index": ""}'
+          ></include>
+        </main>
+        <include
+          src="app/html/footer/footer.html"
+          locals='{"index": ""}'
+        ></include>
+      </div>
     </div>
-    <div class="page__center">
-      <include src="app/html/header/header.html" locals='{"index": ""}'></include>
-      <main>
-        <include src="app/html/index/index.html" locals='{"index": ""}'></include>
 
-      </main>
-    </div>
-  </div>
-
-  <script src="js/index.js"></script>
-</body>
-
+    <script src="js/index.js"></script>
+  </body>
 </html>

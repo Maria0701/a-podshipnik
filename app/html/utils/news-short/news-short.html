@@ -1,0 +1,29 @@
+<each loop="item in arr">
+  <article class="news-short bg-white {{className}}">
+    <div class="news-short__img">
+      <img src="/img/{{item.img}}" alt="" />
+    </div>
+    <div class="news-short__content">
+      <div class="news-short__name">{{item.name}}</div>
+      <if condition="item.text === ''"></if>
+      <else>
+        <div class="news-short__text">{{item.text}}</div>
+      </else>
+    </div>
+    <div class="news-short__info">
+      <div class="news-short__date">{{item.date}}</div>
+      <div class="news-short__view">
+        <svg
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          class="contact__icon"
+          width="15"
+          height="9"
+          aria-hidden="true"
+        >
+          <use xlink:href="../img/sprite.svg#eye"></use>
+        </svg>
+        {{item.num}}
+      </div>
+    </div>
+  </article>
+</each>

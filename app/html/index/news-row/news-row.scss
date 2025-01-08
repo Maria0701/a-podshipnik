@@ -1,0 +1,40 @@
+.news-row__row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.news-row__btns {
+  display: flex;
+  justify-content: center;
+  padding-top: 26px;
+}
+
+@media (max-width: calc($tablet - 1px)) {
+  .news-row__it:nth-child(n + 3) {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet) {
+  .news-row__row {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: calc($desktop - 1px)) {
+  .news-row__it:nth-child(n + 4) {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop) {
+  .news-row__row {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .news-row__btns {
+    display: none;
+  }
+}

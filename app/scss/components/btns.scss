@@ -83,6 +83,28 @@
   display: none;
 }
 
+.btn--more {
+  font-size: 14px;
+  color: var(--red);
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-underline-offset: 3px;
+}
+
+.btn__less {
+  display: none;
+}
+
+.btn--more.opened {
+  .btn__less {
+    display: flex;
+  }
+
+  .btn__more {
+    display: none;
+  }
+}
+
 @media (hover: hover) {
   .btn--red:hover {
     background-color: var(--red-dark);
@@ -96,5 +118,9 @@
   .btn--buy:hover {
     background-color: var(--red-dark);
     border-color: var(--red-dark);
+  }
+
+  .btn--more:hover {
+    color: var(--red-dark);
   }
 }

@@ -1,0 +1,21 @@
+.text {
+  p {
+    font-size: 14px;
+    margin-block: 16px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .tex--2cols {
+    columns: 2;
+    column-gap: 20px;
+  }
+}

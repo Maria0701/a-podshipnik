@@ -1,0 +1,25 @@
+.index-text__text {
+  max-height: 100px;
+  overflow: hidden;
+}
+
+.index-text.opened .index-text__text {
+  max-height: 5000px;
+}
+
+.index-text__btns {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  justify-content: flex-end;
+}
+
+@media (min-width: $desktop) {
+  .index-text__btns {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .index-text__btn {
+    grid-column: 2;
+  }
+}
