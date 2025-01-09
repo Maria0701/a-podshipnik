@@ -1,5 +1,27 @@
 <each loop="item in arr">
   <article class="short-card bg-white {{className}}">
+    <div class="short-card__actions">
+      <button class="btn btn--action">
+        <svg
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="15"
+          height="15"
+          aria-hidden="true"
+        >
+          <use xlink:href="../img/sprite.svg#compare"></use>
+        </svg>
+      </button>
+      <button class="btn btn--action">
+        <svg
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="15"
+          height="15"
+          aria-hidden="true"
+        >
+          <use xlink:href="../img/sprite.svg#heart"></use>
+        </svg>
+      </button>
+    </div>
     <if condition="item.tags === ''"></if>
     <else>
       <div class="short-card__tags">
@@ -30,6 +52,7 @@
     </div>
     <div class="short-card__content">
       <div class="short-card__name">{{item.name}}</div>
+      <div class="short-card__text">Размер: 12x28x8</div>
       <div class="short-card__price">{{item.price}} <span>руб./шт</span></div>
       <if condition="item.inCart === 'true'">
         <div class="short-card__btns short-card__btns--in">

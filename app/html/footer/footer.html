@@ -4,7 +4,7 @@
       <a href="/" class="logo footer__logo" title="На Главную">
         <img src="/img/logo-white.svg" alt="" width="177" height="40" />
       </a>
-      <button class="btn btn--red btn--rounded footer__order">
+      <button class="btn btn--red btn--rounded footer__order" data-action="ask">
         <span>Заказать звонок</span>
       </button>
       <div class="footer__block">
@@ -32,3 +32,7 @@
     </div>
   </div>
 </footer>
+<include
+  src="app/html/utils/popups/popup.html"
+  locals='{"className": ""}'
+></include>

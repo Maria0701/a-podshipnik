@@ -1,0 +1,67 @@
+<div class="popup" data-target="ask">
+  <div class="popup__inside">
+    <button class="btn popup__close js-close">
+      <svg
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        width="13"
+        height="13"
+        aria-hidden="true"
+      >
+        <use xlink:href="../img/sprite.svg#cross"></use>
+      </svg>
+    </button>
+    <div class="popup__content">
+      <div class="popup__name">
+        Не знаете что выбрать? Наш менеджер-консультант поможет определиться
+      </div>
+      <p class="popup__text">
+        Оставьте свои контактные данные, чтобы мы могли с вами связаться
+      </p>
+      <form class="popup__form form">
+        <div class="form__fieldset">
+          <include
+            locals='{
+        "className": "form__it form__it--bordered",
+        "arr": [       
+          {
+            "name": "Ваше имя", 
+            "type": "text",
+            "value": "",
+            "adsClass": "",
+            "placeholder": "",
+            "opts": "",
+            "ico": "person"
+          },
+          {
+            "name": "E-mail", 
+            "type": "email",
+            "value": "",
+            "adsClass": "",
+            "placeholder": "",
+            "opts": "",
+            "ico": "email"
+          },
+          {
+            "name": "Номер телефона", 
+            "type": "tel",
+            "value": "",
+            "adsClass": "",
+            "placeholder": "+7 (999) 999 99 99",
+            "opts": "",
+            "ico": "tel"
+          }
+        ]
+      }'
+            src="app/html/utils/label/label.html"
+          ></include>
+        </div>
+        <div class="form__btns">
+          <div class="form__agree">
+            Я согласен на обработку <a href="#">персональных данных</a>
+          </div>
+          <button class="btn btn--rounded btn--red">Отправить</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

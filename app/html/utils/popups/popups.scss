@@ -1,0 +1,51 @@
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 11;
+  max-width: 508px;
+  width: calc(100% - 20px);
+  transform: translate(-200svw, -50%);
+  background-color: var(--white);
+  border-radius: 20px;
+  max-height: calc(100svh - 20px);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  transition: transform 0.3s;
+}
+
+.popup.opened {
+  transform: translate(-50%, -50%);
+}
+
+.popup__inside {
+  position: relative;
+  padding: 20px 10px;
+}
+
+.popup__name {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.popup__text {
+  margin-top: 0;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.popup__close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  color: var(--text);
+}
+
+@media (min-width: $tablet) {
+  .popup__inside {
+    padding: 50px 42px;
+  }
+}

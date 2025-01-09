@@ -43,11 +43,10 @@
     "@types/webpack-stream": "^3.2.15",
     "lozad": "^1.16.0",
     "nouislider": "^15.7.1",
-    "swiper": "^11.1.14"
+    "swiper": "^11.2.0"
   },
   "repository": {
     "type": "git"
   },
- 
   "description": ""
 }

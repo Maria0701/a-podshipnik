@@ -95,13 +95,29 @@
   display: none;
 }
 
-.btn--more.opened {
+.btn.opened {
   .btn__less {
     display: flex;
   }
 
   .btn__more {
     display: none;
+  }
+}
+
+.btn--action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  color: var(--white);
+  background-color: var(--middle-grey);
+  border-radius: 10px;
+  transition: background-color 0.3s;
+
+  &.active {
+    background-color: var(--red);
   }
 }
 
@@ -122,5 +138,8 @@
 
   .btn--more:hover {
     color: var(--red-dark);
+  }
+  .btn--action:hover {
+    background-color: var(--light-red);
   }
 }

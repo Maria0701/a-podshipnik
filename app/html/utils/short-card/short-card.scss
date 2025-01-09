@@ -2,9 +2,18 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 29px 7px 24px 7px;
+  padding: 60px 7px 24px 7px;
   border-radius: 20px;
   border: 1px solid var(--white);
+}
+
+.short-card__actions {
+  position: absolute;
+  z-index: 1;
+  top: 8px;
+  left: 8px;
+  display: flex;
+  gap: 5px;
 }
 
 @media (hover: hover) {
@@ -30,7 +39,7 @@
 
 .short-card__tags {
   position: absolute;
-  top: 8px;
+  top: 51px;
   left: 8px;
   display: flex;
   flex-wrap: wrap;
@@ -45,10 +54,15 @@
 }
 
 .short-card__name {
-  flex-grow: 1;
-  margin-bottom: 14px;
+  margin-bottom: 5px;
   font-size: 16px;
   color: var(--text);
+}
+
+.short-card__text {
+  flex-grow: 1;
+  font-size: 16px;
+  margin-bottom: 9px;
 }
 
 .short-card__price {
@@ -108,4 +122,10 @@
   left: 0;
   right: 0;
   bottom: 65px;
+}
+
+@media (min-width: $desktop) {
+  .short-card {
+    padding: 20px;
+  }
 }

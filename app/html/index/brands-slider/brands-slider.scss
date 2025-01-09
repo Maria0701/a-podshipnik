@@ -7,6 +7,10 @@
   gap: 10px;
 }
 
+.swiper-initialized .brands-swiper__wrapper {
+  gap: 0;
+}
+
 .brands-swiper__it {
   flex-shrink: 0;
   padding: 7px 20px;

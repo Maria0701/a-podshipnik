@@ -24,8 +24,13 @@
   margin-bottom: 14px;
 }
 
+.form__it--bordered .label__wrapper {
+  border-color: var(--grey);
+}
+
 @media (min-width: $desktop) {
   .form__fieldset {
     margin-bottom: 24px;
+    row-gap: 20px;
   }
 }

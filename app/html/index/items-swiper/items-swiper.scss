@@ -8,16 +8,22 @@
   display: flex;
   width: 100%;
   overflow: hidden;
+  padding-right: 1px;
 }
 
 .items-swiper__wrapper {
   display: flex;
-  gap: 23px;
+  gap: 20px;
+}
+
+.swiper-initialized .items-swiper__wrapper {
+  gap: 0;
 }
 
 .items-swiper__it {
-  flex-basis: 252px;
+  width: 252px;
   flex-shrink: 0;
+  box-sizing: border-box;
 }
 
 .items-swiper__btn {

@@ -23,6 +23,7 @@
 
 .catalog-menu__btn {
   transform: rotate(-90deg);
+  transition: transform 0.3s;
 }
 
 .catalog-menu__sub {
@@ -30,8 +31,7 @@
   overflow: hidden;
 }
 
-@media (hover:hover) {
-
+@media (hover: hover) {
   .catalog-menu__it:hover .catalog-menu__link,
   .catalog-menu__sub-it:hover .catalog-menu__sub-link {
     color: var(--red);
@@ -59,7 +59,6 @@
 }
 
 @media (max-width: calc($desktop - 1px)) {
-
   .catalog-menu__link,
   .catalog-menu__sub-link {
     padding-inline: 10px;
@@ -68,6 +67,16 @@
   .catalog-menu__it,
   .catalog-menu__sub-it {
     padding-right: 10px;
+  }
+
+  .catalog-menu__it.opened {
+    .catalog-menu__sub {
+      height: auto;
+    }
+  }
+
+  .catalog-menu__btn.opened {
+    transform: rotate(90deg);
   }
 }
 
