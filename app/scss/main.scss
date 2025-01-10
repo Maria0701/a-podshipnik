@@ -123,6 +123,10 @@ select {
   padding-bottom: 80px;
 }
 
+.swiper-button-disabled {
+  opacity: 0;
+}
+
 @media (min-width: $desktop) {
   .mb-30-20 {
     margin-bottom: 20px;

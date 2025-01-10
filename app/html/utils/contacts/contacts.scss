@@ -11,6 +11,15 @@
   display: flex;
 }
 
+@media (hover:hover) {
+  a.contacts__it {
+    transition: color 0.3s;
+
+    &:hover{
+    color: var(--red);}
+  }
+}
+
 @media (max-width: calc($desktop - 1px)) {
   .contact {
     padding-block: 5px;

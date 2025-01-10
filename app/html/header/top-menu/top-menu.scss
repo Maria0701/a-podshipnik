@@ -13,13 +13,20 @@
   font-weight: bold;
   line-height: 1.4;
   text-decoration: none;
+  transition: color 0.3s;
 }
 
 .top-menu__it {
   display: flex;
 }
 
-@media (max-width: calc($desktop - 1px)) {
+@media (hover:hover) {
+  .top-menu__link:hover {
+    color: var(--red);
+  }
+}
+
+@media (max-width: calc($container - 1px)) {
   .top-menu {
     flex-direction: column;
     gap: 5px;
@@ -35,7 +42,7 @@
   }
 }
 
-@media (min-width: $desktop) {
+@media (min-width: $container) {
   .top-menu {
     gap: 20px;
     align-items: center;

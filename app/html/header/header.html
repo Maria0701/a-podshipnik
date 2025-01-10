@@ -47,7 +47,7 @@
             <use xlink:href="../img/sprite.svg#tel"></use>
           </svg>
         </a>
-        <button class="btn btn--square btn--bordered header__search-toggler">
+        <button class="btn btn--square btn--bordered header__search-toggler js-search-toggler">
           <svg
             xmlns:xlink="http://www.w3.org/1999/xlink"
             width="11"
@@ -57,15 +57,25 @@
             <use xlink:href="../img/sprite.svg#search"></use>
           </svg>
         </button>
-        <button class="btn btn--square btn--dark header__menu-toggler">
+        <button class="btn btn--square btn--dark header__menu-toggler js-menu-toggler">
           <svg
             xmlns:xlink="http://www.w3.org/1999/xlink"
             width="14"
             height="12"
             aria-hidden="true"
+            class="btn__more"
           >
             <use xlink:href="../img/sprite.svg#menu"></use>
           </svg>
+          <svg
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="14"
+          height="12"
+          aria-hidden="true"
+          class="btn__less"
+        >
+          <use xlink:href="../img/sprite.svg#cross"></use>
+        </svg>
         </button>
       </div>
     </div>
@@ -83,7 +93,7 @@
   </div>
   <div class="header__btm">
     <div class="container header__btm-container">
-      <div class="header__search">
+      <div class="header__search js-search">
         <include
           src="app/html/utils/search/search.html"
           locals='{"className": "header__search"}'
@@ -91,7 +101,7 @@
       </div>
       <include
         src="app/html/header/top-menu/top-menu.html"
-        locals='{"className": "header__top-menu"}'
+        locals='{"className": "header__top-menu js-menu"}'
       ></include>
       <include
         src="app/html/header/users/users.html"

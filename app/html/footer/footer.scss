@@ -10,6 +10,8 @@
   flex-direction: column;
   align-items: center;
   gap: 30px;
+  padding-bottom: 26px;
+  border-bottom: 1px solid var(--white);
 }
 
 .footer__logo {
@@ -32,10 +34,6 @@
   align-items: center;
 }
 
-.footer__top {
-  padding-bottom: 26px;
-  border-bottom: 1px solid var(--white);
-}
 
 .footer__bottom {
   padding-top: 26px;
@@ -71,6 +69,10 @@
     display: block;
     columns: 2;
     gap: 20px;
+
+    .contacts__it:not(:last-child) {
+      margin-bottom: 14px;
+    }
   }
 
   .footer__contacts .contacts__it {

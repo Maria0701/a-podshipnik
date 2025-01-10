@@ -18,6 +18,14 @@ const catalogInstanse = new MenuHandler({
 const menuInstanse = new MenuHandler({
   togglerClass: ".js-menu-toggler",
   menuClass: ".js-menu",
+  headerOpenClass: "menu-opened",
+});
+
+const searchInstanse = new MenuHandler({
+  togglerClass: ".js-search-toggler",
+  menuClass: ".js-search",
+  headerOpenClass: "search-opened",
+  overlayNeeded: false,
 });
 
 const mainSlider = document.querySelector(`.js-main-slider`);

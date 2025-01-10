@@ -39,6 +39,7 @@
     top: 40px;
     left: 0;
     z-index: 2;
+    padding-top: 14px;
     width: 100%;
     order: 3;
     background-color: var(--grey);
@@ -82,17 +83,23 @@
     gap: 10px;
   }
 
-  .header.opened {
+  .header.menu-opened {
+    z-index: 11;
     .header__top-menu,
     .header__top {
-      transform: translate3d(0, 0, 0);
+      transform: translate3d(var(--left-size), 0, 0);
+      z-index: 11;
+    }
+
+    .header__mobile {
+      z-index: 11;
     }
 
     .header__catalog-toggler {
       position: absolute;
       left: 56px;
       top: 4px;
-      z-index: 2;
+      z-index: 11;
     }
 
     .header__mobile-it {

@@ -40,6 +40,7 @@ export class MenuHandler {
     closerClass,
     headerOpenClass = "opened",
     openedClass = "opened",
+    overlayNeeded = true,
   }) {
     this.togglerClass = togglerClass;
     this.headerOpenClass = headerOpenClass;
@@ -53,6 +54,7 @@ export class MenuHandler {
     this.activeSubMenu = null;
     this.overlay = null;
     this.header = null;
+    this.overlayNeeded = overlayNeeded;
     this.openedClass = openedClass;
     this.openMenuHandler = this.openMenuHandler.bind(this);
     this.closeMenuHandler = this.closeMenuHandler.bind(this);
@@ -99,7 +101,7 @@ export class MenuHandler {
       );
     }
 
-    if (!this.overlay) {
+    if (!this.overlay && this.overlayNeeded) {
       this.overlay = new CreateNewElement(
         document.querySelector("body"),
         "div",

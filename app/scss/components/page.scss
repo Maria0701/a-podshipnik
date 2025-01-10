@@ -58,7 +58,7 @@
 @media (min-width: $desktop) {
   .page {
     display: grid;
-    grid-template-columns: minmax(0, 300px) minmax(0, 1fr);
+    grid-template-columns: minmax(0, var(--left-size)) minmax(0, 1fr);
     max-width: 1920px;
     margin: 0 auto;
     width: 100%;
@@ -84,15 +84,10 @@
 }
 
 @media (min-width: $container) {
-  .page {
-    grid-template-columns: minmax(0, 300px) minmax(0, 1fr);
-  }
+
 }
 
 @media (min-width: 1920px) {
-  .page {
-    grid-template-columns: minmax(0, 400px) minmax(0, 1fr);
-  }
 
   .page__logo {
     max-width: 350px;
