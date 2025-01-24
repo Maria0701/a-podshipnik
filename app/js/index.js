@@ -4,7 +4,6 @@ import { Popup } from "./components/popups.js";
 import {
   initializeBannersSlider,
   initializeBrandsSlider,
-  initializeGoodsSlider,
   initializeMainSlider,
 } from "./components/swipers.js";
 
@@ -46,14 +45,25 @@ if (brandsSlider) {
   initializeBrandsSlider({
     sliderElt: brandsSlider,
     className: ".brands-swiper",
+    numberOfSlides : 6
   });
 }
 
 const goodsSlider = document.querySelector(`.js-goods-slider`);
 if (goodsSlider) {
-  initializeGoodsSlider({
+  initializeBrandsSlider({
     sliderElt: goodsSlider,
     className: ".items-swiper",
+    numberOfSlides : 5
+  });
+}
+
+const catsSlider = document.querySelector(`.js-cats-slider`);
+if (catsSlider) {
+  initializeBrandsSlider({
+    sliderElt: catsSlider,
+    className: ".categories-sw",
+    numberOfSlides : 4
   });
 }
 

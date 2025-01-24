@@ -41,7 +41,7 @@ export const initializeBannersSlider = ({ sliderElt, className }) => {
   });
 };
 
-export const initializeBrandsSlider = ({ sliderElt, className }) => {
+export const initializeBrandsSlider = ({ sliderElt, className, numberOfSlides }) => {
   const slider = sliderElt.querySelector(`${className}__slider`);
   if (!slider) return;
   const nextElt = sliderElt.querySelector(".btn--right");
@@ -52,7 +52,7 @@ export const initializeBrandsSlider = ({ sliderElt, className }) => {
     spaceBetween: 20,
     breakpoints: {
       1420: {
-        slidesPerView: 6,
+        slidesPerView: numberOfSlides ,
       },
     },
     navigation: {
@@ -62,23 +62,4 @@ export const initializeBrandsSlider = ({ sliderElt, className }) => {
   });
 };
 
-export const initializeGoodsSlider = ({ sliderElt, className }) => {
-  const slider = sliderElt.querySelector(`${className}__slider`);
-  if (!slider) return;
-  const nextElt = sliderElt.querySelector(".btn--right");
-  const prevElt = sliderElt.querySelector(".btn--left");
 
-  const mySwiper = new Swiper(slider, {
-    slidesPerView: "auto",
-    spaceBetween: 20,
-    breakpoints: {
-      1420: {
-        slidesPerView: 5,
-      },
-    },
-    navigation: {
-      nextEl: nextElt,
-      prevEl: prevElt,
-    },
-  });
-};
