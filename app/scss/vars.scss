@@ -15,6 +15,7 @@
   --orange: #ff8903;
   --orange-op: rgba(255, 137, 3, 0.1);
   --padding: 15px;
+  --font-30-36: 30px;
   --left-size: 0;
 }
 
@@ -24,12 +25,14 @@ $container: 1460px;
 
 @media (min-width: $tablet) {
   :root {
+    --font-30-36: 32px;
   }
 }
 
 @media (min-width: $desktop) {
   :root {
     --left-size: 270px;
+    --font-30-36: 36px;
   }
 }
 

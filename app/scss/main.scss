@@ -89,7 +89,6 @@ select {
   opacity: 0.6;
   background: var(--black, #231f20);
   transition: height 0.6s;
-
   top: 0;
   height: 100%;
   z-index: 10;
@@ -105,6 +104,15 @@ select {
 
 .bg--pink {
   background-color: var(--grey-red);
+}
+
+.h1 {
+  margin: 0;
+  font-size: var(--font-30-36);
+}
+
+.mb-20 {
+  margin-bottom: 20px;
 }
 
 .mb-30-20 {
@@ -126,6 +134,7 @@ select {
 .swiper-button-disabled {
   opacity: 0;
 }
+
 
 @media (min-width: $desktop) {
   .mb-30-20 {

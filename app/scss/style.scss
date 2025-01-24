@@ -10,6 +10,7 @@
 @import "../html/utils/contacts/contacts.scss";
 @import "../html/utils/label/label.scss";
 @import "../html/utils/qty/qty.scss";
+@import "../html/utils/img-top/img-top.scss";
 @import "components/form.scss";
 @import "../html/utils/form-manager/form-manager.scss";
 @import "../html/utils/short-card/short-card.scss";
@@ -19,9 +20,12 @@
 @import "../html/header/header.scss";
 @import "../html/utils/catalog-menu/catalog-menu.scss";
 @import "../html/index/slider/slide/slide.scss";
+@import "../html/utils/bread/bread.scss";
 @import "../html/utils/short-filter/short-filter.scss";
 @import "../html/utils/news-short/news-short.scss";
 @import "../html/utils/popups/popups.scss";
+@import "../html/utils/tag-list/tag-list-it/tag-list-it.scss";
+@import "../html/utils/tag-list/tag-list.scss";
 @import "../html/index/slider/slider.scss";
 @import "../html/index/advantages/advantage/advantage.scss";
 @import "../html/index/advantages/advantages.scss";
@@ -35,4 +39,6 @@
 @import "../html/index/news-row/news-row.scss";
 @import "../html/footer/cards/cards.scss";
 @import "../html/footer/footer.scss";
-// @import "../html/plug/plug.scss";
+@import "../html/catalog/categories-block/categories-it/categories-it.scss";
+@import "../html/catalog/categories-block/categories-block.scss";
+

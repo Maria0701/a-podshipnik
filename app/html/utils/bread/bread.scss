@@ -1,0 +1,48 @@
+.bread {
+  padding-block: 20px;
+}
+
+.bread__list {
+  display: flex;
+  align-items: center;
+  gap: 5px 25px;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  overflow-x: hidden;
+}
+
+.bread__link {
+  display: flex;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+a.bread__link {
+  position: relative;
+  color: var(--blue-grey);
+  transition: color 0.3s;
+
+  &::before {
+    content: '/';
+    position: absolute;
+    right: -14px;
+    top: 50%;
+    color: var(--blue-grey);
+    font-size: 10px;
+    line-height: 1;
+    transform: translateY(-50%);
+  }
+}
+
+span.bread__link {
+  color: var(--text);
+}
+
+@media (hover:hover) {
+  a.bread__link:hover {
+    color: var(--red);
+  }
+}
