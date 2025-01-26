@@ -1,0 +1,68 @@
+<form class="sorters" action=".">
+  <include locals='{
+    "className": "",
+    "arr": [
+      {
+        "name": "Сортировать по", 
+        "ico": "sort",
+        "value": "Убыванию цены",
+        "labels": [
+          {
+            "name": "Убыванию цены",
+            "value": "1"
+          },
+          {
+            "name": "Возрастанию цены",
+            "value": "2"
+          },
+          {
+            "name": "Возрастанию размера",
+            "value": "3"
+          },
+          {
+            "name": "Убыванию размера",
+            "value": "4"
+          }
+        ]
+      },
+      {
+        "name": "Показывать по", 
+        "ico": "",
+        "value": "50",
+        "labels": [
+          {
+            "name": "20",
+            "value": "1"
+          },
+          {
+            "name": "50",
+            "value": "2"
+          },
+          {
+            "name": "100",
+            "value": "3"
+          }
+        ]
+      },
+      {
+        "name": "Наличие", 
+        "ico": "",
+        "value": "Все",
+        "labels": [
+          {
+            "name": "Все",
+            "value": "1"
+          },
+          {
+            "name": "В наличии",
+            "value": "2"
+          },
+          {
+            "name": "На заказ",
+            "value": "3"
+          }
+        ]
+      }
+    ]
+  }' src="app/html/utils/sorters/sorter-it/sorter-it.html"></include>
+</form>

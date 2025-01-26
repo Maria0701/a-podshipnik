@@ -1,0 +1,29 @@
+<each loop="item in arr">
+  <div class="sorter-it {{className}}">
+    <div class="sorter-it__name">{{item.name}}</div>
+    <div class="sorter-it__select fake-select">
+      <button class="btn fake-select__btn">
+        <if condition="item.ico === ''"></if>
+        <else>
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="6" aria-hidden="true">
+            <use xlink:href="/img/sprite.svg#sort"></use>
+          </svg>
+        </else>
+        <span>{{item.value}}</span>
+        <svg  class="fake-select__ico" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10" aria-hidden="true">
+          <use xlink:href="/img/sprite.svg#chevron"></use>
+        </svg>
+      </button>
+      <div class="fake-select__div">
+        <div class="fake-select__inside bg-white">
+          <each loop="lab in item.labels">
+            <label class="fake-select__label">
+              <input class="fake-select__input" type="radio" name="{{item.name}}" value="{{lab.value}}">
+              <span class="fake-select__val">{{lab.name}}</span>
+            </label>
+          </each>
+        </div>
+      </div>
+    </div>
+  </div>
+</each>

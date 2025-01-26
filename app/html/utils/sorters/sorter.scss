@@ -1,0 +1,18 @@
+.sorter-it__name {
+  display:flex;
+  font-weight: 700;
+  color: var(--blue-grey)
+}
+
+.sorter-it {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.sorters {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px 60px; 
+}

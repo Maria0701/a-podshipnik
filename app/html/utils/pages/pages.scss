@@ -1,0 +1,40 @@
+.pages__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline:5px;
+  min-width: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text);
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.pages__link--active {
+  background-color: var(--middle-grey);
+}
+
+.pages__it {
+  display: flex;
+  align-items: center;
+
+}
+
+.pages {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.pages__link--next {
+  transform: scale(-1, 1);
+  min-width: auto;
+}
+
+.pages__link--prev {
+  min-width: auto;
+}

@@ -1,0 +1,14 @@
+.views {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.views__btn {
+  color: var(--blue-grey);
+  transition: color 0.3s;
+
+  &.active {
+    color: var(--red);
+  }
+}

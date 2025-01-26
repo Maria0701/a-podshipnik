@@ -1,30 +1,308 @@
-<include
-src="app/html/utils/img-top/img-top.html"
-locals='{"className": "mb-20", "text": "Игольчатые подшипники"}'
-></include>
-<include
-src="app/html/utils/bread/bread.html"
-locals='{"className": "mb-46"}'
-></include>
+<include src="app/html/utils/img-top/img-top.html" locals='{"className": "mb-20", "text": "Игольчатые подшипники"}'>
+</include>
+<include src="app/html/utils/bread/bread.html" locals='{"className": "mb-46"}'></include>
 <div class="container">
-  <include
-    src="app/html/utils/h1/h1.html"
-    locals='{"className": "mb-20", "text": "Игольчатые подшипники"}'
-  ></include>
-  <include
-    src="app/html/utils/short-filter/short-filter.html"
-    locals='{"className": "mb-60"}'
-  ></include>
-  <include
-    src="app/html/utils/tag-list/tag-list.html"
-    locals='{"className": "mb-60"}'
-  ></include>
-  <include
-    src="app/html/category/categories-swiper/categories-swiper.html"
-    locals='{"className": "mb-60 js-cats-slider"}'
-  ></include>
-  <include
-    src="app/html/index/index-text/index-text.html"
-    locals='{"className": "mb-60"}'
-  ></include>
+  <include src="app/html/utils/h1/h1.html" locals='{"className": "mb-20", "text": "Игольчатые подшипники"}'></include>
+  <include src="app/html/utils/short-filter/short-filter.html" locals='{"className": "mb-60"}'></include>
+  <include src="app/html/utils/tag-list/tag-list.html" locals='{"className": "mb-60"}'></include>
+  <include src="app/html/category/categories-swiper/categories-swiper.html"
+    locals='{"className": "mb-60 js-cats-slider"}'></include>
+  <div class="category">
+    <div class="category__actions">
+      <include src="app/html/utils/sorters/sorter.html" locals='{"className": ""}'></include>
+      <include src="app/html/utils/pages/pages.html" locals='{"className": ""}'></include>
+      <include src="app/html/category/view/view.html" locals='{"className": ""}'></include>
+    </div>
+    <div class="category__list">
+      <include
+          locals='{
+            "className": "category__it",
+            "arr": [
+              {
+                "name": "Шариковый подшипник 51206 SKF", 
+                "price": "3383",
+                "img": "cat1.png",
+                "producer": "producer1.png",
+                "inCart": "true",
+                "tags": [
+                  {
+                    "name": "В наличии",
+                    "ico": "tick",
+                    "kind": "green"
+                  },
+                  {
+                    "name": "ХИТ",
+                    "ico": "",
+                    "kind": "red"
+                  },
+                  {
+                    "name": "Новинка",
+                    "ico": "",
+                    "kind": "yellow"
+                  }
+                ]
+              },
+              {
+                "name": "Шарикоподшипник 51206 SKF", 
+                "price": "78 383",
+                "img": "cat2.png",
+                "producer": "producer2.png",
+                "inCart": "false",
+                "tags": [
+                  {
+                    "name": "В наличии",
+                    "ico": "tick",
+                    "kind": "green"
+                  }
+                ]
+              },
+              {
+                "name": "Подшипник 51206 SKF", 
+                "price": "1 283",
+                "img": "cat3.jpg",
+                "producer": "producer3.png",
+                "inCart": "false",
+                "tags": [
+                  {
+                    "name": "В наличии",
+                    "ico": "tick",
+                    "kind": "green"
+                  },
+                  {
+                    "name": "ХИТ",
+                    "ico": "",
+                    "kind": "red"
+                  }
+                ]
+              },
+              {
+                "name": "Нержавеющий подшипник 6000 SKF", 
+                "price": "3383",
+                "img": "cat4.jpg",
+                "producer": "producer4.png",
+                "inCart": "false",
+                "tags": [
+                  {
+                    "name": "В наличии",
+                    "ico": "tick",
+                    "kind": "green"
+                  }
+                ]
+              },
+              {
+                "name": "Подшипник 51206 SKF", 
+                "price": "3383",
+                "img": "cat5.jpg",
+                "producer": "producer5.png",
+                "inCart": "true",
+                "tags": [
+                  {
+                    "name": "В наличии",
+                    "ico": "tick",
+                    "kind": "green"
+                  },
+                  {
+                    "name": "ХИТ",
+                    "ico": "",
+                    "kind": "red"
+                  },
+                  {
+                    "name": "Новинка",
+                    "ico": "",
+                    "kind": "yellow"
+                  }
+                ]
+              },
+              {
+                "name": "Шариковый подшипник 51206 SKF", 
+                "price": "3383",
+                "img": "cat6.jpg",
+                "producer": "producer6.png",
+                "inCart": "true",
+                "tags": [
+                  {
+                    "name": "В наличии",
+                    "ico": "tick",
+                    "kind": "green"
+                  },
+                  {
+                    "name": "ХИТ",
+                    "ico": "",
+                    "kind": "red"
+                  },
+                  {
+                    "name": "Новинка",
+                    "ico": "",
+                    "kind": "yellow"
+                  }
+                ]
+              },
+              {
+                "name": "Шариковый подшипник 51206 SKF", 
+                "price": "3383",
+                "img": "cat1.png",
+                "producer": "producer1.png",
+                "inCart": "true",
+                "tags": [
+                  {
+                    "name": "В наличии",
+                    "ico": "tick",
+                    "kind": "green"
+                  },
+                  {
+                    "name": "ХИТ",
+                    "ico": "",
+                    "kind": "red"
+                  },
+                  {
+                    "name": "Новинка",
+                    "ico": "",
+                    "kind": "yellow"
+                  }
+                ]
+              },
+              {
+                "name": "Шарикоподшипник 51206 SKF", 
+                "price": "78 383",
+                "img": "cat2.png",
+                "producer": "producer2.png",
+                "inCart": "false",
+                "tags": [
+                  {
+                    "name": "В наличии",
+                    "ico": "tick",
+                    "kind": "green"
+                  }
+                ]
+              },
+              {
+                "name": "Подшипник 51206 SKF", 
+                "price": "1 283",
+                "img": "cat3.jpg",
+                "producer": "producer3.png",
+                "inCart": "false",
+                "tags": [
+                  {
+                    "name": "В наличии",
+                    "ico": "tick",
+                    "kind": "green"
+                  },
+                  {
+                    "name": "ХИТ",
+                    "ico": "",
+                    "kind": "red"
+                  }
+                ]
+              },
+              {
+                "name": "Нержавеющий подшипник 6000 SKF", 
+                "price": "3383",
+                "img": "cat4.jpg",
+                "producer": "producer4.png",
+                "inCart": "false",
+                "tags": [
+                  {
+                    "name": "В наличии",
+                    "ico": "tick",
+                    "kind": "green"
+                  }
+                ]
+              },
+              {
+                "name": "Подшипник 51206 SKF", 
+                "price": "3383",
+                "img": "cat5.jpg",
+                "producer": "producer5.png",
+                "inCart": "true",
+                "tags": [
+                  {
+                    "name": "В наличии",
+                    "ico": "tick",
+                    "kind": "green"
+                  },
+                  {
+                    "name": "ХИТ",
+                    "ico": "",
+                    "kind": "red"
+                  },
+                  {
+                    "name": "Новинка",
+                    "ico": "",
+                    "kind": "yellow"
+                  }
+                ]
+              },
+              {
+                "name": "Шариковый подшипник 51206 SKF", 
+                "price": "3383",
+                "img": "cat6.jpg",
+                "producer": "producer6.png",
+                "inCart": "true",
+                "tags": [
+                  {
+                    "name": "В наличии",
+                    "ico": "tick",
+                    "kind": "green"
+                  },
+                  {
+                    "name": "ХИТ",
+                    "ico": "",
+                    "kind": "red"
+                  },
+                  {
+                    "name": "Новинка",
+                    "ico": "",
+                    "kind": "yellow"
+                  }
+                ]
+              },
+              {
+                "name": "Шариковый подшипник 51206 SKF", 
+                "price": "3383",
+                "img": "cat1.jpg",
+                "producer": "producer1.png",
+                "inCart": "true",
+                "tags": [
+                  {
+                    "name": "В наличии",
+                    "ico": "tick",
+                    "kind": "green"
+                  },
+                  {
+                    "name": "ХИТ",
+                    "ico": "",
+                    "kind": "red"
+                  },
+                  {
+                    "name": "Новинка",
+                    "ico": "",
+                    "kind": "yellow"
+                  }
+                ]
+              },
+              {
+                "name": "Шарикоподшипник 51206 SKF", 
+                "price": "78 383",
+                "img": "cat2.jpg",
+                "producer": "producer2.png",
+                "inCart": "false",
+                "tags": [
+                  {
+                    "name": "В наличии",
+                    "ico": "tick",
+                    "kind": "green"
+                  }
+                ]
+              }
+            ]
+          }'
+          src="app/html/utils/short-card/short-card.html"
+        ></include>
+    </div>
+    <div class="category__pages">
+      <include src="app/html/utils/pages/pages.html" locals='{"className": ""}'></include>
+    </div>
+    <include src="app/html/category/category-text/category-text.html" locals='{"className": "mb-60"}'></include>
+  </div>
+
 </div>

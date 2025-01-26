@@ -11,11 +11,149 @@
       margin-bottom: 0;
     }
   }
+
+  h2 {
+    margin-block: 20px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+  }
+
+  ul {
+    margin-block: 15px;
+    padding: 0;
+    list-style: none;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    li {
+      position: relative;
+      margin-bottom: 10px;
+      padding-left: 22px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 5px;
+        width: 10px;
+        height: 10px;
+        border: 2px solid var(--red);
+        border-radius: 50%;
+        box-sizing: border-box;
+      }  
+    }
+  }
+
+  ol {
+    margin-block: 15px;
+    padding: 0;
+    list-style: none;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+  
+    }
+  }
+
+  img {
+    margin-block: 30px;
+    border-radius: 20px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  blockquote {
+    position: relative;
+    margin-inline: 0;
+    margin-block: 30px;
+    padding-block: 0;
+    padding-right: 0;
+    padding-left: 20px;
+    color: var(--red);
+    font-size: 16px;
+    font-weight: 700;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background-color: var(--red);
+    }
+
+    
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 @media (min-width: $desktop) {
   .tex--2cols {
     columns: 2;
     column-gap: 20px;
+  }
+
+  .text .blockquote {
+    margin-block: 50px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.text-block__btns {
+  margin-bottom: 30px;
+}
+
+@media (min-width: $desktop) {
+  .text-block__btns {
+    margin-bottom: 40px;
   }
 }
