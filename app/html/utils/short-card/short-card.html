@@ -2,22 +2,12 @@
   <article class="short-card bg-white {{className}}">
     <div class="short-card__actions">
       <button class="btn btn--action">
-        <svg
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          width="15"
-          height="15"
-          aria-hidden="true"
-        >
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" aria-hidden="true">
           <use xlink:href="../img/sprite.svg#compare"></use>
         </svg>
       </button>
       <button class="btn btn--action">
-        <svg
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          width="15"
-          height="15"
-          aria-hidden="true"
-        >
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" aria-hidden="true">
           <use xlink:href="../img/sprite.svg#heart"></use>
         </svg>
       </button>
@@ -29,13 +19,7 @@
           <span class="tag tag--{{tag.kind}}">
             <if condition="tag.ico === ''"></if>
             <else>
-              <svg
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                class="tag__icon"
-                width="8"
-                height="6"
-                aria-hidden="true"
-              >
+              <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="tag__icon" width="8" height="6" aria-hidden="true">
                 <use xlink:href="../img/sprite.svg#{{tag.ico}}"></use>
               </svg>
             </else>
@@ -44,73 +28,44 @@
         </each>
       </div>
     </else>
-    <div class="short-card__producer">
-      <img src="/img/{{item.producer}}" alt="" />
-    </div>
+   
     <div class="short-card__img">
+      <div class="short-card__producer">
+        <img src="/img/{{item.producer}}" alt="" />
+      </div>
       <img src="/img/{{item.img}}" alt="" width="234" height="234" />
     </div>
     <div class="short-card__content">
       <div class="short-card__name">{{item.name}}</div>
       <div class="short-card__text">Размер: 12x28x8</div>
-      <div class="short-card__price">{{item.price}} <span>руб./шт</span></div>
-      <if condition="item.inCart === 'true'">
-        <div class="short-card__btns short-card__btns--in">
-          <button class="btn btn--buy">
-            <svg
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              class="btn__icon"
-              width="28"
-              height="20"
-              aria-hidden="true"
-            >
-              <use xlink:href="../img/sprite.svg#buy"></use>
-            </svg>
-            <svg
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              class="btn__in"
-              width="15"
-              height="12"
-              aria-hidden="true"
-            >
-              <use xlink:href="../img/sprite.svg#tick"></use>
-            </svg>
-          </button>
-          <include
-            src="app/html/utils/qty/qty.html"
-            locals='{"className": "short-card__qty"}'
-          ></include>
-        </div>
-      </if>
-      <else>
-        <div class="short-card__btns">
-          <button class="btn btn--buy">
-            <svg
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              class="btn__icon"
-              width="28"
-              height="20"
-              aria-hidden="true"
-            >
-              <use xlink:href="../img/sprite.svg#buy"></use>
-            </svg>
-            <svg
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              class="btn__in"
-              width="28"
-              height="20"
-              aria-hidden="true"
-            >
-              <use xlink:href="../img/sprite.svg#tick"></use>
-            </svg>
-          </button>
-          <include
-            src="app/html/utils/qty/qty.html"
-            locals='{"className": "short-card__qty"}'
-          ></include>
-        </div>
-      </else>
     </div>
+    <div class="short-card__price">{{item.price}} <span>руб./шт</span></div>
+    <if condition="item.inCart === 'true'">
+      <div class="short-card__btns short-card__btns--in">
+        <button class="btn btn--buy">
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="btn__icon" width="28" height="20" aria-hidden="true">
+            <use xlink:href="../img/sprite.svg#buy"></use>
+          </svg>
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="btn__in" width="15" height="12" aria-hidden="true">
+            <use xlink:href="../img/sprite.svg#tick"></use>
+          </svg>
+        </button>
+        <include src="app/html/utils/qty/qty.html" locals='{"className": "short-card__qty"}'></include>
+      </div>
+    </if>
+    <else>
+      <div class="short-card__btns">
+        <button class="btn btn--buy">
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="btn__icon" width="28" height="20" aria-hidden="true">
+            <use xlink:href="../img/sprite.svg#buy"></use>
+          </svg>
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="btn__in" width="28" height="20" aria-hidden="true">
+            <use xlink:href="../img/sprite.svg#tick"></use>
+          </svg>
+        </button>
+        <include src="app/html/utils/qty/qty.html" locals='{"className": "short-card__qty"}'></include>
+      </div>
+    </else>
     <a href="#" class="short-card__link"></a>
   </article>
 </each>

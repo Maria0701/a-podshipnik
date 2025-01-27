@@ -1,0 +1,22 @@
+.item-top {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  padding: 18px 10px 26px 10px;
+  border-radius: 20px;
+}
+
+.item-top__actions {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  gap: 5px;
+  top: 27px;
+  left: 20px;
+}
+
+@media (min-width: $tablet) {
+  .item-top {
+    grid-template-columns: 436px minmax(0, 1fr);
+  }
+}
