@@ -1,0 +1,11 @@
+.item-chars__it {
+  padding: 9px 20px;
+  background-color: var(--light-grey);
+  border-radius: 10px;
+}
+
+.item-chars {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}

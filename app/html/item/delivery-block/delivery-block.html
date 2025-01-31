@@ -1,0 +1,30 @@
+<div class="delivery-block">
+  <div class="delivery-row delivery-row--head">
+    <span></span>
+    <span class="delivery-row__pic"></span>
+    <span class="delivery-row__name"></span>
+    <span class="delivery-row__time">Срок поставки</span>
+    <span class="delivery-row__price">Цена</span>
+  </div>
+  <include locals='{
+    "className": "",
+    "arr": [
+      {
+        "name": "delivery", 
+        "img": "boxberry.png",
+        "del": "Boxberry",
+        "time": "3-4 дня",
+        "price": "0",
+        "value": "1"
+      },
+      {
+        "name": "delivery", 
+        "img": "dpdgoup.png",
+        "del": "dpd",
+        "time": "3-4 дня",
+        "price": "522",
+        "value": "2"
+      }
+    ]
+  }' src="app/html/item/delivery-block/delivery-row/delivery-row.html"></include>
+</div>

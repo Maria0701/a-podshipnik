@@ -1,0 +1,15 @@
+.chars-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.chars-row__value {
+  font-weight: 700;
+}
+
+.chars-row__name {
+  flex-grow: 1;
+}
+
+

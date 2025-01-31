@@ -1,0 +1,20 @@
+<div class="{{className}}">
+  <div class="hash-links-wrapper {{adsClass}}">
+    <div class="flex">
+      <div class="hash-links">
+        <each loop="item in arr">
+          <if condition="item.name === 'leave'">
+            <a href="{{item.link}}" class="hash-links__it {{item.className}}" title="{{item.name}}">
+              <svg fill="none" width="15" height="15">
+                <use xlink:href="img/sprite.svg#leave"></use>
+              </svg>
+            </a>
+          </if>
+          <else>
+            <a href="{{item.link}}" class="hash-links__it {{item.className}}" title="{{item.name}}">{{item.name}}</a>
+          </else>
+        </each>
+      </div>
+    </div>
+  </div>
+</div>

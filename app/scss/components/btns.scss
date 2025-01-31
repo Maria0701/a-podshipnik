@@ -27,6 +27,23 @@
 .btn--bordered {
   color: var(--white);
   border: 1px solid var(--white);
+  transition: color 0.3s border-color 0.3s;
+
+  &:hover {
+    color: var(--grey);
+    border-color: var(--grey);
+  }
+}
+
+.btn--bordered-red {
+  color: var(--red);
+  border: 1px solid var(--red);
+  transition: color 0.3s border-color 0.3s;
+
+  &:hover {
+    color: var(--red-dark);
+    border-color: var(--red-dark);
+  }
 }
 
 .btn--dark {
@@ -143,4 +160,5 @@
   .btn--action:hover {
     background-color: var(--light-red);
   }
+
 }

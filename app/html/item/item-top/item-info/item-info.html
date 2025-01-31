@@ -1,0 +1,44 @@
+<div class="item-info item-top__info">
+  <div class="item-info__row">
+    <div class="item-info__name">Артикул:</div>
+    <div class="item-info__value">60012RSZWZ</div>
+  </div>
+  <div class="item-info__row">
+    <div class="item-info__name">Производитель</div>
+    <div class="item-info__value">
+      <img src="/img/producer1.png" alt="" width="73" height="37" />
+    </div>
+  </div>
+  <div class="item-info__row">
+    <div class="item-info__name">Страна Бренда:</div>
+    <div class="item-info__value">Китай</div>
+  </div>
+  <div class="item-info__price"><span>3383</span> руб./шт</div>
+  <div class="item-info__btns short-card__btns--in">
+    <button class="btn btn--buy">
+      <svg
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        class="btn__icon"
+        width="28"
+        height="20"
+        aria-hidden="true"
+      >
+        <use xlink:href="/img/sprite.svg#buy"></use>
+      </svg>
+      <svg
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        class="btn__in"
+        width="15"
+        height="12"
+        aria-hidden="true"
+      >
+        <use xlink:href="../img/sprite.svg#tick"></use>
+      </svg>
+    </button>
+    <include
+      src="app/html/utils/qty/qty.html"
+      locals='{"className": "item-info__qty"}'
+    ></include>
+    <button class="btn btn--bordered-red btn--rounded">Купить в 1 клик</button>
+  </div>
+</div>

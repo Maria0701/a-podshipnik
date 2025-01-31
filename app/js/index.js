@@ -1,3 +1,4 @@
+import { fixHashes } from "./components/fixHashes.js";
 import { MenuHandler } from "./components/menu-opener.js";
 import { phoneMask } from "./components/phone-mask.js";
 import { Popup } from "./components/popups.js";
@@ -77,6 +78,8 @@ const getPhoneInputsListeners = async () => {
 };
 
 getPhoneInputsListeners();
+
+fixHashes({ containerClass: '.js-fix-hashes', blockClass: '.js-hashes' })
 
 try {
   const popupsClass = "[data-action]";

@@ -1,0 +1,9 @@
+<each loop="item in arr">
+<label class="delivery-row bg-grey">
+  <input type="radio" class="delivery-row__input" name="{{item.delivery}}" value="{{item.value}}">
+  <span class="delivery-row__pic"><img src="/img/{{item.img}}" alt="{{item.del}}" width="106" height="30"></span>
+  <span class="delivery-row__name">{{item.del}}</span>
+  <span class="delivery-row__time">{{item.time}}</span>
+  <span class="delivery-row__price">от {{item.price}} руб.</span>
+</label>
+</each>

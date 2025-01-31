@@ -1,17 +1,50 @@
-<div class="item-top bg-white">
+<div class="item-top bg-white {{className}}">
   <div class="item-top__actions">
     <button class="btn btn--action">
-      <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" aria-hidden="true">
+      <svg
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        width="15"
+        height="15"
+        aria-hidden="true"
+      >
         <use xlink:href="../img/sprite.svg#compare"></use>
       </svg>
     </button>
     <button class="btn btn--action">
-      <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" aria-hidden="true">
+      <svg
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        width="15"
+        height="15"
+        aria-hidden="true"
+      >
         <use xlink:href="../img/sprite.svg#heart"></use>
       </svg>
     </button>
   </div>
-  <div class="item-top__tags"></div>
-  <include src="app/html/item/item-top/item-slider/item-slider.html" locals='{"className": "", "text": ""}'></include>
-  <include src="app/html/item/item-top/item-info/item-info.html" locals='{"className": "", "text": ""}'></include>
+  <div class="item-top__tags">
+    <span class="tag tag--green">
+      <svg
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        class="tag__icon"
+        width="8"
+        height="6"
+        aria-hidden="true"
+      >
+        <use xlink:href="../img/sprite.svg#tick"></use>
+      </svg>
+      В наличии
+    </span>
+  </div>
+  <include
+    src="app/html/item/item-top/item-slider/item-slider.html"
+    locals='{"className": "", "text": ""}'
+  ></include>
+  <include
+    src="app/html/item/item-top/item-short/item-short.html"
+    locals='{"className": "", "text": ""}'
+  ></include>
+  <include
+    src="app/html/item/item-top/item-info/item-info.html"
+    locals='{"className": "", "text": ""}'
+  ></include>
 </div>

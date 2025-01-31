@@ -1,0 +1,23 @@
+.item-short__it {
+  align-items: flex-end;
+  gap: 10px;
+  margin-bottom: 15px;
+  padding-block: 0;
+
+  border-bottom: 1px solid var(--light-grey);
+
+  div {
+
+    text-decoration: underline 4px var(--white);
+    text-underline-offset: 4px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.item-short {
+  display: flex;
+  flex-direction: column;
+
+}

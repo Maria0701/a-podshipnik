@@ -1,3 +1,40 @@
 @import "../html/item/item-top/item-info/item-info.scss";
 @import "../html/item/item-top/item-slider/item-slider.scss";
+@import "../html/item/item-top/item-short/item-short.scss";
 @import "../html/item/item-top/item-top.scss";
+@import "../html/item/item-chars/item-chars.scss";
+@import "../html/item/delivery-block/delivery-row/delivery-row.scss";
+@import "../html/item/delivery-block/delivery-block.scss";
+
+.item-content__el {
+ padding: 20px 20px 40px 20px;
+ border-radius: 20px;; 
+}
+
+.item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.item-content__hashes {
+  justify-content: flex-start;
+}
+
+.item-content__search {
+  border: 0;
+  border-radius: 10px;
+  background-color: var(--light-grey);
+
+  .search__input {
+    padding-top: 8px;
+    padding-bottom: 9px;
+  }
+
+}
+
+@media (min-width: $desktop) {
+  .item-content {
+    gap: 60px;
+  }
+}
