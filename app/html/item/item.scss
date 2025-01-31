@@ -5,16 +5,19 @@
 @import "../html/item/item-chars/item-chars.scss";
 @import "../html/item/delivery-block/delivery-row/delivery-row.scss";
 @import "../html/item/delivery-block/delivery-block.scss";
+@import "../html/item/alternatives/alternative-it/alternative-it.scss";
+@import "../html/item/alternatives/alternatives.scss";
 
 .item-content__el {
  padding: 20px 20px 40px 20px;
  border-radius: 20px;; 
 }
 
-.item-content {
+.item-content,
+.item-content__blocks {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 40px 20px;
 }
 
 .item-content__hashes {
@@ -30,11 +33,34 @@
     padding-top: 8px;
     padding-bottom: 9px;
   }
-
 }
 
+.item-content__h3 {
+  margin-bottom: 15px;
+}
+
+
 @media (min-width: $desktop) {
+  .item-content__blocks {
+    row-gap: 60px;
+  }
+}
+
+@media (min-width: 1300px) {
+
   .item-content {
-    gap: 60px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 500px);
+  }
+
+  .item-content__aside {
+    position: relative;
+    padding-top: 54px;
+
+    .item-content__el {
+      position: sticky;
+      top: 0;
+      width: 100%;
+    }
   }
 }

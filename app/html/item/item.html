@@ -29,6 +29,7 @@
     ]
   }'></include>
   <div class="item-content">
+    <div class="item-content__blocks">
     <div class="item-content__block">
       <h2 class="h2 mb-20">Характеристики</h2>
       <include src="app/html/item/item-chars/item-chars.html"
@@ -55,12 +56,27 @@
           <button class="hash-links__it active" title="Доставка">Доставка</button>
           <button class="hash-links__it" title="Самовывоз">Самовывоз</button>
         </div>
-        <include src="app/html/item/delivery-block/delivery-block.html" locals='{"className": "item-content__search mb-40-60"}'>
+        <include src="app/html/item/delivery-block/delivery-block.html"
+          locals='{"className": "item-content__search mb-40-60"}'>
       </div>
     </div>
     <div class="item-content__block">
       <h2 class="h2 mb-20">Отзывы</h2>
-      <div class="item-content__el bg-white text">
+      <div class="item-content__el bg-white">
+        <div class="mb-40-60">
+          <h3 class="h3 item-content__h3">Нет отзывов на товар</h3>
+          <button class="btn btn--rounded btn--grey">Оставить отзыв</button>
+
+        </div>
+        <include src="app/html/item/feedback/feedback.html"
+          locals='{"className": "item-content__fb"}'>
+      </div>
+    </div>
+  </div>
+    <div class="item-content__aside">
+      <div class="item-content__el bg-white">
+        <h3 class="h3">Аналоги</h3>
+        <include src="app/html/item/alternatives/alternatives.html"></include>
       </div>
     </div>
   </div>

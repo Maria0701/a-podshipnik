@@ -1,0 +1,35 @@
+.alternative{
+  display: grid;
+  grid-template-columns: minmax(0,1fr) 100px 140px;
+  gap: 20px;
+  padding:8px 14px 10px 14px;
+  font-size: 16px;
+  color: var(--text);
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.alternative__name {
+  font-weight: 700;
+  transition: color 0.3s;
+}
+
+.alternative__art {
+  color: var(--red);
+  text-decoration: dashed underline var(--light-red-op);
+  text-underline-offset: 2px;
+  
+}
+
+.alternative--head {
+  padding: 0;
+  font-size: 14px;
+}
+
+@media (hover:hover) {
+  .alternative:hover{
+    .alternative__name {
+      color: var(--red);
+    }
+  }
+}

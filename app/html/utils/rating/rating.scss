@@ -1,0 +1,34 @@
+.rating {
+  display: flex;
+  gap: 4px;
+  width: 100%;
+  overflow: hidden;
+  flex-direction: row-reverse;
+  position: relative;
+  justify-content: flex-end;
+}
+
+.rating > input {
+  display: none;
+}
+
+
+.rating > label {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  margin-top: auto;
+  color: var(--light-grey);
+  transition: color .3s;
+}
+
+.rating > input:checked ~ label,
+.rating > input:checked ~ label ~ label {
+  color: var(--orange);
+}
+
+
+.rating > input:not(:checked) ~ label:hover,
+.rating > input:not(:checked) ~ label:hover ~ label {
+  color: var(--orange);
+}

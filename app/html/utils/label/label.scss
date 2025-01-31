@@ -27,6 +27,15 @@
   }
 }
 
+.label--grey .label__wrapper {
+  background-color: var(--light-grey);
+  border: 2px solid var(--light-grey);
+}
+
+.label--full {
+  grid-column: 1/-1;
+}
+
 .label__input {
   padding: 5px 12px 5px 12px;
   height: 100%;

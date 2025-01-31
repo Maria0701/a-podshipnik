@@ -1,5 +1,5 @@
 <each loop="item in arr">
-  <label class="label {{className}}">
+  <label class="label {{className}}  {{item.adsClass}}">
     <span class="label__wrapper">
       <if condition="item.ico === ''"></if>
       <else>
@@ -23,6 +23,10 @@
           </each>
         </select>
       </if>
+      <elseif condition="item.type === 'textarea'">
+        <textarea class="label__input"
+        name="{{item.name}}" rows="5"></textarea>
+      </elseif>
       <else>
         <input
           class="label__input"

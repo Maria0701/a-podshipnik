@@ -64,5 +64,6 @@
 
   .short-filter__fieldset {
     margin-bottom: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
   }
 }

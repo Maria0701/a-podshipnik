@@ -28,6 +28,12 @@
   border-color: var(--grey);
 }
 
+@media (min-width: $tablet) {
+  .form__fieldset--2cols {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (min-width: $desktop) {
   .form__fieldset {
     margin-bottom: 24px;

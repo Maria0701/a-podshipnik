@@ -1,0 +1,42 @@
+<fom class="form">
+  <h3 class="h3 item-content__h3">Оставьте отзыв</h3>
+  <div class="form__fieldset form__fieldset--2cols">
+    <include locals='{
+      "className": "form__it label--grey ",
+      "arr": [
+        {
+          "name": "Ваше имя", 
+          "type": "text",
+          "value": "",
+          "adsClass": "",
+          "placeholder": "",
+          "opts": "",
+          "ico": "person"
+        },
+        {
+          "name": "E-mail", 
+          "type": "email",
+          "value": "",
+          "adsClass": " ",
+          "placeholder": "",
+          "opts": "",
+          "ico": "email"
+        },
+        {
+          "name": "Комментарий", 
+          "type": "textarea",
+          "value": "",
+          "adsClass": "label--full",
+          "placeholder": "",
+          "opts": "",
+          "ico": ""
+        }
+      ]
+    }' src="app/html/utils/label/label.html"></include>
+    <include src="app/html/utils/rating/rating.html"></include>
+  </div>
+  <div class="form__btns">
+    <div class="form__agree">Я согласен на обработку <a href="#">персональных данных</a></div>
+    <button class="btn btn--rounded btn--red">Отправить</button>
+  </div>
+</fom>
