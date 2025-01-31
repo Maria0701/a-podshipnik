@@ -1,19 +1,44 @@
 <each loop="item in arr">
-  <a href="#" class="users-it users-it--{{item.ico}}" title="{{item.name}}">
-    <span class="users-it__ico">
-      <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" aria-hidden="true">
-        <use xlink:href="/img/sprite.svg#{{item.ico}}"></use>
-      </svg>
-      <if condition="item.num === ''">
-        <span class="users-it__num users-it__num-tick">
-          <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="8" aria-hidden="true">
-            <use xlink:href="/img/sprite.svg#tick"></use>
+  <if condition="item.ico === 'buy'">
+    <div class="users-it users-it--{{item.ico}} small-cart">
+      <a href="#" class="users-it__link" title="{{item.name}}">
+        <span class="users-it__ico">
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" aria-hidden="true">
+            <use xlink:href="/img/sprite.svg#{{item.ico}}"></use>
           </svg>
+          <if condition="item.num === ''">
+            <span class="users-it__num users-it__num-tick">
+              <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="8" aria-hidden="true">
+                <use xlink:href="/img/sprite.svg#tick"></use>
+              </svg>
+            </span>
+          </if>
+          <else>
+            <span class="users-it__num">{{item.num}}</span>
+          </else>
         </span>
-      </if>
-      <else>
-        <span class="users-it__num">{{item.num}}</span>
-      </else>
-    </span>
-  </a>
+      </a>
+      <include src="app/html/utils/small-cart/small-cart.html"></include>
+    </div>
+  </if>
+  <else>
+    <a href="#" class="users-it users-it--{{item.ico}}" title="{{item.name}}">
+      <span class="users-it__ico">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" aria-hidden="true">
+          <use xlink:href="/img/sprite.svg#{{item.ico}}"></use>
+        </svg>
+        <if condition="item.num === ''">
+          <span class="users-it__num users-it__num-tick">
+            <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="8" aria-hidden="true">
+              <use xlink:href="/img/sprite.svg#tick"></use>
+            </svg>
+          </span>
+        </if>
+        <else>
+          <span class="users-it__num">{{item.num}}</span>
+        </else>
+      </span>
+    </a>
+  </else>
+
 </each>

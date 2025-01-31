@@ -1,0 +1,42 @@
+<div class="small-cart__block">
+  <div class="small-cart__inside">
+    <div class="small-cart__rows mb-20">
+      <include locals='{
+        "className": "short-categories__it",
+        "arr": [
+          {
+            "name": "Шариковый подшипник 51206 SKF",
+            "img": "cat1.png",
+            "num": "101"
+          },
+          {
+            "name": "Шподшипник 51206 SKF",
+            "img": "cat2.png",
+            "num": "1 010"
+          },
+          {
+            "name": "Шариковый подшипник 51206 SKF",
+            "img": "cat3.png",
+            "num": "25 101"
+          },
+          {
+            "name": "Шариковый подшипник 51206 SKF",
+            "img": "cat4.png",
+            "num": "1 125"
+          },
+          {
+            "name": "Шариковый подшипник 51206 SKF",
+            "img": "cat4.png",
+            "num": "47 125"
+          }
+        ]
+      }' src="app/html/utils/small-cart/cart-row/cart-row.html"></include>
+    </div>
+    <a href="/cart" class="btn btn--red btn--rounded small-cart__btn">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="20" aria-hidden="true">
+        <use xlink:href="/img/sprite.svg#buy"></use>
+      </svg>
+      <span>Перейти в корзину</span>
+    </a>
+  </div>
+</div>

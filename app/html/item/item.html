@@ -28,51 +28,50 @@
       }
     ]
   }'></include>
-  <div class="item-content">
+  <div class="item-content mb-40-60">
     <div class="item-content__blocks">
-    <div class="item-content__block">
-      <h2 class="h2 mb-20">Характеристики</h2>
-      <include src="app/html/item/item-chars/item-chars.html"
-        locals='{"className": "item-content__el bg-white item-chars"}'></include>
-    </div>
-    <div class="item-content__block">
-      <h2 class="h2 mb-20">Описание товара</h2>
-      <div class="item-content__el bg-white text">
-        <p><strong>Подшипник 6001-2RS ORS</strong> относится к шариковым радиальным однорядным подшипникам.</p>
-        <p><strong></strong>Выполнен c двухсторонним уплотнением из вулканизированной резины (2RS) и имеет CN зазор
-          (нормальный). Характерная рабочая скорость вращения для данного подшипника 24000 оборотов в минуту.</strong>
-        </p>
-        <p>Внешний диаметр составляет <strong>28 мм</strong>, внутренний диаметр <strong>12 мм</strong></p>
-        <p>Ширина – <strong>8 мм</strong></p>
-        <p>Класс точности – <strong>P0</strong></p>
+      <div class="item-content__block">
+        <h2 class="h2 mb-20">Характеристики</h2>
+        <include src="app/html/item/item-chars/item-chars.html"
+          locals='{"className": "item-content__el bg-white item-chars"}'></include>
       </div>
-    </div>
-    <div class="item-content__block">
-      <h2 class="h2 mb-20">Доставка</h2>
-      <div class="item-content__el bg-white text">
-        <include src="app/html/utils/search/search.html" locals='{"className": "item-content__search mb-40-60"}'>
-        </include>
-        <div class="item-content__hashes hash-links">
-          <button class="hash-links__it active" title="Доставка">Доставка</button>
-          <button class="hash-links__it" title="Самовывоз">Самовывоз</button>
+      <div class="item-content__block">
+        <h2 class="h2 mb-20">Описание товара</h2>
+        <div class="item-content__el bg-white text">
+          <p><strong>Подшипник 6001-2RS ORS</strong> относится к шариковым радиальным однорядным подшипникам.</p>
+          <p><strong></strong>Выполнен c двухсторонним уплотнением из вулканизированной резины (2RS) и имеет CN зазор
+            (нормальный). Характерная рабочая скорость вращения для данного подшипника 24000 оборотов в минуту.</strong>
+          </p>
+          <p>Внешний диаметр составляет <strong>28 мм</strong>, внутренний диаметр <strong>12 мм</strong></p>
+          <p>Ширина – <strong>8 мм</strong></p>
+          <p>Класс точности – <strong>P0</strong></p>
         </div>
-        <include src="app/html/item/delivery-block/delivery-block.html"
-          locals='{"className": "item-content__search mb-40-60"}'>
       </div>
-    </div>
-    <div class="item-content__block">
-      <h2 class="h2 mb-20">Отзывы</h2>
-      <div class="item-content__el bg-white">
-        <div class="mb-40-60">
-          <h3 class="h3 item-content__h3">Нет отзывов на товар</h3>
-          <button class="btn btn--rounded btn--grey">Оставить отзыв</button>
+      <div class="item-content__block">
+        <h2 class="h2 mb-20">Доставка</h2>
+        <div class="item-content__el bg-white text">
+          <include src="app/html/utils/search/search.html" locals='{"className": "item-content__search mb-40-60"}'>
+          </include>
+          <div class="item-content__hashes hash-links">
+            <button class="hash-links__it active" title="Доставка">Доставка</button>
+            <button class="hash-links__it" title="Самовывоз">Самовывоз</button>
+          </div>
+          <include src="app/html/item/delivery-block/delivery-block.html"
+            locals='{"className": "item-content__search mb-40-60"}'>
+        </div>
+      </div>
+      <div class="item-content__block">
+        <h2 class="h2 mb-20">Отзывы</h2>
+        <div class="item-content__el bg-white">
+          <div class="mb-40-60">
+            <h3 class="h3 item-content__h3">Нет отзывов на товар</h3>
+            <button class="btn btn--rounded btn--grey">Оставить отзыв</button>
 
+          </div>
+          <include src="app/html/item/feedback/feedback.html" locals='{"className": "item-content__fb"}'>
         </div>
-        <include src="app/html/item/feedback/feedback.html"
-          locals='{"className": "item-content__fb"}'>
       </div>
     </div>
-  </div>
     <div class="item-content__aside">
       <div class="item-content__el bg-white">
         <h3 class="h3">Аналоги</h3>
@@ -80,4 +79,6 @@
       </div>
     </div>
   </div>
+  <include src="app/html/index/items-swiper/items-swiper.html" locals='{"className": "mb-60", "title": "С этим товаром покупают"}'></include>
+  <include src="app/html/index/items-swiper/items-swiper.html" locals='{"className": "", "title": "Вы недавно интересовались"}'></include>
 </div>

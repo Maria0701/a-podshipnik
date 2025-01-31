@@ -50,6 +50,10 @@
   }
 }
 
+.users-it__link {
+  display: flex;
+}
+
 @media (min-width: $tablet) {
   .users-it__ico {
     width: 40px;

@@ -1,0 +1,22 @@
+<each loop="item in arr">
+  <div class="small-cart__row">
+    <a href="/item.html" class="small-cart__link">
+      <div class="small-cart__img">
+        <img src="/img/{{item.img}}" alt="" width="50" height="50">
+      </div>
+      <div class="small-cart__name">{{item.name}}</div>
+      <div class="small-cart__price">
+        <div class="small-cart__price-new">{{item.num}}  руб./шт</div>
+        <div class="small-cart__price-old">{{item.num}}  руб./шт</div>
+      </div>
+    </a>
+    <div class="small-cart__actions">
+      <include src="app/html/utils/qty/qty.html" locals='{"className": "small-cart__qty"}'></include>
+      <button class="btn btn--grey btn--square ">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="17" aria-hidden="true">
+          <use xlink:href="/img/sprite.svg#bin"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</each>
