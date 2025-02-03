@@ -2,6 +2,11 @@
   position: relative;
   display: flex;
   align-items: center;
+  transition: color 0.3s;
+
+  &:hover {
+    color: var(--red);
+  }
 }
 
 .fake-select__val {
@@ -14,14 +19,13 @@
 .fake-select__input {
   opacity: 0;
   position: absolute;
-
 }
 
 .fake-select__inside {
   border-radius: 20px;
   margin-top: 10px;
   overflow: hidden;
-  filter: drop-shadow(6px 4px 11.9px rgba(0,0,0,0.35));
+  filter: drop-shadow(6px 4px 11.9px rgba(0, 0, 0, 0.35));
 }
 
 .fake-select__input:checked ~ .fake-select__val {
@@ -32,6 +36,14 @@
   position: relative;
   display: flex;
   align-items: center;
+  cursor: pointer;
+
+  &:hover {
+    .fake-select__div {
+      visibility: visible;
+      z-index: 10;
+    }
+  }
 }
 
 .fake-select__btn {
@@ -57,7 +69,7 @@
   transform: rotate(-90deg);
 }
 
-@media (hover:hover) {
+@media (hover: hover) {
   .fake-select__btn:hover {
     background-color: var(--middle-grey);
   }

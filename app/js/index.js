@@ -46,17 +46,19 @@ if (brandsSlider) {
   initializeBrandsSlider({
     sliderElt: brandsSlider,
     className: ".brands-swiper",
-    numberOfSlides : 6
+    numberOfSlides: 6,
   });
 }
 
-const goodsSlider = document.querySelector(`.js-goods-slider`);
-if (goodsSlider) {
-  initializeBrandsSlider({
-    sliderElt: goodsSlider,
-    className: ".items-swiper",
-    numberOfSlides : 5
-  });
+const goodsSlider = document.querySelectorAll(`.js-goods-slider`);
+if (goodsSlider.length) {
+  goodsSlider.forEach((item) =>
+    initializeBrandsSlider({
+      sliderElt: item,
+      className: ".items-swiper",
+      numberOfSlides: 5,
+    })
+  );
 }
 
 const catsSlider = document.querySelector(`.js-cats-slider`);
@@ -64,7 +66,7 @@ if (catsSlider) {
   initializeBrandsSlider({
     sliderElt: catsSlider,
     className: ".categories-sw",
-    numberOfSlides : 4
+    numberOfSlides: 4,
   });
 }
 
@@ -79,7 +81,7 @@ const getPhoneInputsListeners = async () => {
 
 getPhoneInputsListeners();
 
-fixHashes({ containerClass: '.js-fix-hashes', blockClass: '.js-hashes' })
+// fixHashes({ containerClass: '.js-fix-hashes', blockClass: '.js-hashes' });
 
 try {
   const popupsClass = "[data-action]";
@@ -120,3 +122,29 @@ try {
 } catch (e) {
   console.log(e);
 }
+
+const changeView = () => {
+  const viewBlock = document.querySelector(".js-views");
+  if (!viewBlock) return;
+  const viewChangeHandler = (evt) => {
+    evt.preventDefault();
+    const categoryClass = ".category__list";
+    const target = evt.target.closest("[data-view]");
+    if (!target) return;
+    const view = target.dataset.view;
+    const list = document.querySelector(categoryClass);
+    if (!list || list.classList.contains(view)) return;
+    if (list.classList.contains(view)) return;
+    if (view === "grid") {
+      list.classList.remove("list");
+      list.classList.add("grid");
+    } else {
+      list.classList.remove("grid");
+      list.classList.add("list");
+    }
+  };
+  viewBlock.addEventListener("click", viewChangeHandler);
+  //category__list--list
+};
+
+changeView();

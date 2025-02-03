@@ -7,6 +7,9 @@
   top: 100%;
   right: 0;
   z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0.3s, opacity 0.3s;
 }
 
 .small-cart__inside {
@@ -17,7 +20,7 @@
   background-color: var(--white);
   border-radius: 20px;
   // 6px 4px 11.9px, rgba(0,0,0,0.35)
-  filter: drop-shadow(6px 4px 12px rgba(0,0,0,0.35));
+  filter: drop-shadow(6px 4px 12px rgba(0, 0, 0, 0.35));
 }
 
 .small-cart__row {
@@ -50,6 +53,7 @@
   overflow: hidden;
   overflow-y: auto;
   scrollbar-width: thin;
+  overscroll-behavior: contain;
 }
 
 .small-cart__price {
@@ -76,4 +80,19 @@
 
 .small-cart__btn {
   margin-left: auto;
+}
+
+@media (min-width: $desktop) {
+  .small-cart {
+    &:hover {
+      .small-cart__block {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+
+    .btn--square:hover {
+      color: var(--red);
+    }
+  }
 }

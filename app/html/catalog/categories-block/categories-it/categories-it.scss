@@ -9,6 +9,7 @@
   color: var(--text);
   text-decoration: none;
   border-radius: 20px;
+  overflow: hidden;
 }
 
 .categories-it__img {
@@ -30,6 +31,7 @@
   align-self: flex-end;
   font-size: 20px;
   font-weight: 700;
+  hyphens: auto;
   transition: color 0.3s;
 }
 

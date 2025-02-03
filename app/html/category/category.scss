@@ -5,7 +5,7 @@
   justify-content: space-between;
 }
 
-.category__pages{
+.category__pages {
   display: flex;
   justify-content: center;
 }
@@ -23,7 +23,6 @@
 }
 
 @media (min-width: $tablet) {
-
   .category__list {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 30px 20px;
@@ -31,7 +30,7 @@
 }
 
 @media (min-width: $desktop) {
-  .category__list--list {
+  .category__list.list {
     grid-template-columns: repeat(1, minmax(0, 1fr));
 
     .category__it {
@@ -74,4 +73,3 @@
     }
   }
 }
-
