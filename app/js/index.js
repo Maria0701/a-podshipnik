@@ -123,28 +123,32 @@ try {
   console.log(e);
 }
 
+const changeViewElt = (list, view) => {
+  if (!list || list.classList.contains(view)) return;
+  if (list.classList.contains(view)) return;
+  if (view === "grid") {
+    list.classList.remove("list");
+    list.classList.add("grid");
+  } else {
+    list.classList.remove("grid");
+    list.classList.add("list");
+  }
+}
+
 const changeView = () => {
   const viewBlock = document.querySelector(".js-views");
   if (!viewBlock) return;
-  const viewChangeHandler = (evt) => {
-    evt.preventDefault();
-    const categoryClass = ".category__list";
-    const target = evt.target.closest("[data-view]");
-    if (!target) return;
-    const view = target.dataset.view;
+  const viewEls = viewBlock.querySelectorAll('input');
+
+  const categoryClass = ".category__list";
+  const changeViewHandler = (evt) => {
+    const currentValue = evt.target.value;
+    if (!currentValue) return;
     const list = document.querySelector(categoryClass);
-    if (!list || list.classList.contains(view)) return;
-    if (list.classList.contains(view)) return;
-    if (view === "grid") {
-      list.classList.remove("list");
-      list.classList.add("grid");
-    } else {
-      list.classList.remove("grid");
-      list.classList.add("list");
-    }
-  };
-  viewBlock.addEventListener("click", viewChangeHandler);
-  //category__list--list
+    changeViewElt(list, currentValue);
+  }
+
+  viewEls.forEach((item) => item.addEventListener('change', changeViewHandler))
 };
 
 changeView();

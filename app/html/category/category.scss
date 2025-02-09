@@ -70,6 +70,28 @@
       .short-card__btns {
         align-self: flex-start;
       }
+
+      .short-card__link {
+        bottom: 0;
+        right: 240px;
+      }
+
+      .btn--buy {
+        width: 146px
+      }
+
+      .btn__text-buy {
+        display: flex;
+      }
+
+      .short-card__btns--in .btn__text-buy {
+        display: none;
+        
+      }
+
+      .short-card__btns--in .btn--buy {
+        width: 44px;
+      }
     }
   }
 }

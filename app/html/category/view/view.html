@@ -1,9 +1,10 @@
 <div class="views js-views">
-  <button
+  <label
     data-view="grid"
-    class="btn views__btn active"
+    class="btn views__btn"
     aria-label="change to grid view"
   >
+  <input class="view__input" type="radio" name="view" value="grid" checked />
     <svg
       xmlns:xlink="http://www.w3.org/1999/xlink"
       width="20"
@@ -12,12 +13,13 @@
     >
       <use xlink:href="../img/sprite.svg#grid"></use>
     </svg>
-  </button>
-  <button
+  </label>
+  <label
     data-view="row"
     class="btn views__btn"
     aria-label="change to list view"
   >
+    <input class="view__input" type="radio" name="view" value="list" />
     <svg
       xmlns:xlink="http://www.w3.org/1999/xlink"
       width="20"
@@ -26,5 +28,5 @@
     >
       <use xlink:href="../img/sprite.svg#list"></use>
     </svg>
-  </button>
+  </label>
 </div>

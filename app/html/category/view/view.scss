@@ -5,10 +5,24 @@
 }
 
 .views__btn {
-  color: var(--blue-grey);
+  position: relative;
+
   transition: color 0.3s;
+
+  svg {
+    color: var(--blue-grey);
+  }
 
   &.active {
     color: var(--red);
+  }
+}
+
+.view__input {
+  position: absolute;
+  opacity: 0;
+
+  &:checked ~ svg {
+    color: var(--red)
   }
 }
