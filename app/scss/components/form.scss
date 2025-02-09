@@ -3,7 +3,7 @@
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 50px;
+  gap: 10px 50px;
 }
 
 .form__agree {
@@ -19,9 +19,12 @@
 
 .form__fieldset {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 15px 20px;
   margin-bottom: 14px;
+}
+
+.form__fieldset--3cols {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .form__it--bordered .label__wrapper {

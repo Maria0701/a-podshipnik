@@ -13,7 +13,8 @@
   }
 
   h2 {
-    margin-block: 20px;
+    margin-top: 20px;
+    margin-bottom: 13px;
 
     &:first-child {
       margin-top: 0;
@@ -22,7 +23,6 @@
     &:last-child {
       margin-bottom: 0;
     }
-
   }
 
   ul {
@@ -48,16 +48,16 @@
       }
 
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         left: 0;
-        top: 5px;
+        top: 7px;
         width: 10px;
         height: 10px;
         border: 2px solid var(--red);
         border-radius: 50%;
         box-sizing: border-box;
-      }  
+      }
     }
   }
 
@@ -80,7 +80,6 @@
       &:last-child {
         margin-bottom: 0;
       }
-  
     }
   }
 
@@ -109,7 +108,7 @@
     font-weight: 700;
 
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       top: 0;
@@ -118,7 +117,6 @@
       background-color: var(--red);
     }
 
-    
     &:first-child {
       margin-top: 0;
     }
@@ -145,6 +143,10 @@
     &:last-child {
       margin-bottom: 0;
     }
+  }
+
+  .text h2 {
+    margin-top: 60px;
   }
 }
 

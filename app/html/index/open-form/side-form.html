@@ -1,14 +1,10 @@
-<div class="open-form bg-pink {{className}}" style="background-image: url(/img/form.png);">
-  <div class="open-form__top">
-    <div class="open-form__name">Не знаете что выбрать? Наш менеджер-консультант поможет определиться</div>
-    <div class="open-form__text">Оставьте свои контактные данные, чтобы мы могли с вами связаться</div>
+<div class="side-form bg-pink {{className}}">
+  <div class="side-form__top">
+    <div class="side-form__name">Задать вопрос</div>
+    <div class="side-form__text">Оставьте свои контактные данные, чтобы мы могли с вами связаться</div>
   </div>
-  <include
-    src="app/html/utils/form-manager/form-manager.html"
-    locals='{"className": "open-form__manager"}'
-  ></include>
-  <form class="form open-form__form">
-    <div class="form__fieldset form__fieldset--3cols">
+  <form class="form side-form__form">
+    <div class="form__fieldset">
       <include
         locals='{
       "className": "form__it",
@@ -39,6 +35,15 @@
           "placeholder": "+7 (999) 999 99 99",
           "opts": "",
           "ico": "tel"
+        },
+        {
+          "name": "Комментарий", 
+          "type": "textarea",
+          "value": "",
+          "adsClass": "",
+          "placeholder": "",
+          "opts": "",
+          "ico": ""
         }
       ]
     }'
