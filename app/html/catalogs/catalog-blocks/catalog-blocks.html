@@ -1,0 +1,16 @@
+<each loop="item in arr">
+<div class="catalog-block bg-white">
+  <h2 class="h2  mb-20">{{item.name}}</h2>
+  <div class="catalog-block__list">
+    <each loop="it in item.arr">
+      <a href="#" class="pdf-it">
+        <div class="pdf-it__img">
+          <img src="/img/{{it.name}}" alt="{{it.img}}" />
+        </div>
+        <div class="pdf-it__name">{{it.img}}</div>
+        <div class="pdf-it__size">{{it.other}}</div>
+      </a>
+    </each>
+  </div>
+</div>
+</each>

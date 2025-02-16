@@ -1,0 +1,14 @@
+@import "catalog-blocks/pdf-it.scss";
+@import "catalog-blocks/catalog-blocks.scss";
+
+.catalogs {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 40px;
+}
+
+@media (min-width: $desktop) {
+  .catalogs {
+    gap: 60px;
+  }
+}
