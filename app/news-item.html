@@ -56,6 +56,56 @@
               src="app/html/index/open-form/open-form.html"
               locals='{"className": "mb-46"}'
             ></include>
+            <div class="news-block logo-bg">
+              <h2 class="h2 mb-18">Другие статьи</h2>
+              <div class="news">
+                <div class="news__list">
+                  <include
+                    locals='{
+                  "className": "news__it",
+                  "arr": [
+                    {
+                      "name": "Подшипники Podtrade — high quality product", 
+                      "img": "news5.jpg",
+                      "text": "Опорный подшипник представляет собой важный конструкционный элемент переднего амортизатора в автомобиле. Он позволяет стойке ",
+                      "date": "24.06.2024",
+                      "num": "1727"
+                    },
+                    {
+                      "name": "С днём народного единства!", 
+                      "img": "news2.jpg",
+                      "text": "Опорный подшипник представляет собой важный конструкционный элемент переднего амортизатора в автомобиле. Он позволяет стойке ",
+                      "date": "24.05.2024",
+                      "num": "1717"
+                    },
+                    {
+                      "name": "График работы на майские праздники", 
+                      "img": "news3.jpg",
+                      "text": "Опорный подшипник представляет собой важный конструкционный элемент переднего амортизатора в автомобиле. Он позволяет стойке ",
+                      "date": "22.05.2024",
+                      "num": "17"
+                    },
+                    {
+                      "name": "Открываем новый офис в Москве", 
+                      "img": "news4.jpg",
+                      "text": "Опорный подшипник представляет собой важный конструкционный элемент переднего амортизатора в автомобиле. Он позволяет стойке ",
+                      "date": "20.05.2024",
+                      "num": "1717"
+                    }
+                  ]
+                }'
+                    src="app/html/utils/news-short/news-short.html"
+                  ></include>
+                </div>
+                <aside class="news__aside">
+                  <a
+                    href="/news.html"
+                    class="news-block__btn btn btn--rounded btn--dark-grey"
+                    >Ко всем статьям</a
+                  >
+                </aside>
+              </div>
+            </div>
           </div>
         </main>
         <include

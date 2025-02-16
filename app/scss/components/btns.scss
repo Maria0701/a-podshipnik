@@ -6,6 +6,7 @@
   font-family: inherit;
   text-decoration: none;
   border: 0;
+  text-decoration: none;
   background-color: transparent;
   cursor: pointer;
 }
@@ -54,6 +55,7 @@
 .btn--rounded {
   justify-content: center;
   padding: 9px 20px;
+  width: fit-content;
   font-weight: bold;
   font-size: 14px;
   border-radius: 20px;
@@ -67,6 +69,15 @@
 .btn--grey {
   color: var(--grey);
   background-color: var(--light-grey);
+}
+
+.btn--dark-grey {
+  color: var(--white);
+  background-color: var(--grey);
+
+  &:hover {
+    background-color: var(--text);
+  }
 }
 
 .btn--arr {
@@ -164,5 +175,4 @@
   .btn--action:hover {
     background-color: var(--light-red);
   }
-
 }

@@ -34,7 +34,6 @@
   align-items: center;
 }
 
-
 .footer__bottom {
   padding-top: 26px;
 }
@@ -95,6 +94,10 @@
 
     .top-menu__link {
       color: var(--white);
+
+      &:hover {
+        color: var(--red);
+      }
     }
   }
 
