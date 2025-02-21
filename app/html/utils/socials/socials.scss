@@ -1,0 +1,20 @@
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.socials__it {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--red);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+@media (hover: hover) {
+  .socials__it:hover {
+    color: var(--light-red)
+  }
+}

@@ -31,9 +31,17 @@
   border-color: var(--grey);
 }
 
+.form__it--bordered .label-checkbox__input {
+  border-color: var(--grey);
+}
+
 @media (min-width: $tablet) {
   .form__fieldset--2cols {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .form__agree {
+    font-size: 15px;;
   }
 }
 
