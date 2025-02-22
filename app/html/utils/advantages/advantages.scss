@@ -1,0 +1,12 @@
+@import "advantage/advantage.scss";
+.advantages {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 5px 20px;
+}
+
+@media (min-width: 1500px) {
+  .advantages {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+}

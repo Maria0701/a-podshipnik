@@ -1,9 +1,9 @@
-import { CreateNewElement } from "./utils.js";
+import { CreateNewElement } from "./createNewElt.js";
 
 const coords = {
   coords: [59.956156, 30.296015],
-  name: 'Индивидуальный стиль',
-  description: "Большой проспект Петроградской стороны, 22-24",
+  name: 'А-подшипник',
+  description: "Здесь будет ваш адрес",
 };
 
 
@@ -32,9 +32,9 @@ export class YmapsInitializer {
       }, {
 
         iconLayout: 'default#image',
-        iconImageHref: '/img/point.svg',
-        iconImageSize: [60, 60],
-        iconImageOffset: [-30, -30]
+        iconImageHref: '/img/map-logo.svg',
+        iconImageSize: [40, 40],
+        iconImageOffset: [-20, -40]
       });
       this.myMap.geoObjects.add(this.myPlacemark);
     }
@@ -50,9 +50,9 @@ export class YmapsInitializer {
       balloonContent: newCoords.description
     }, {
       iconLayout: 'default#image',
-      iconImageHref: '/img/point.svg',
-      iconImageSize: [60, 60],
-      iconImageOffset: [-30, -30]
+      iconImageHref:  '/img/map-logo.svg',
+      iconImageSize: [40, 40],
+      iconImageOffset: [-20, -40]
     });
     this.myMap.geoObjects.add(this.myPlacemark);
   }

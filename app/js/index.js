@@ -7,6 +7,7 @@ import {
   initializeBrandsSlider,
   initializeMainSlider,
 } from "./components/swipers.js";
+import { YmapsInitializer } from "./components/yandex.js";
 
 const catalogInstanse = new MenuHandler({
   togglerClass: ".js-menu-catalog-toggler",
@@ -152,3 +153,19 @@ const changeView = () => {
 };
 
 changeView();
+
+// запускаем карту
+try {
+  const mapContainer = document.querySelector('.js-map');
+  if (mapContainer) {
+    const coords = {
+      coords: [mapContainer.dataset.fort, mapContainer.dataset.long],
+      name: mapContainer.dataset.name,
+      description: mapContainer.dataset.description,
+    };
+
+    new YmapsInitializer(mapContainer, coords);
+  }
+} catch (e) {
+  console.log(e);
+}
