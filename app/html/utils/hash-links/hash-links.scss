@@ -21,6 +21,7 @@
   border: 0;
   text-decoration: none;
   transition: color 0.3s;
+  cursor: pointer;
 
   &:hover {
     color: var(--white);
@@ -30,6 +31,7 @@
 .hash-links__it.active {
   color: var(--white);
   background: var(--red);
+  cursor: initial;
 }
 
 .hash-links-wrapper.fixed {

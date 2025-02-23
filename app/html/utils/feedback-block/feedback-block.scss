@@ -1,0 +1,20 @@
+@import "feedback-it/feedback-it.scss";
+
+.feedback-block {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  padding: 16px;
+  gap: 10px;
+  border-radius: 20px;
+
+  .pages{
+    justify-self: center;
+  }
+}
+
+@media (min-width: $desktop) {
+  .feedback-block {
+    padding: 30px;
+    gap: 30px;
+  }
+}

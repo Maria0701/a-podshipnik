@@ -9,6 +9,7 @@
   text-decoration: none;
   background-color: transparent;
   cursor: pointer;
+  transition: color 0.3s, background-color 0.3s, border-color 0.3s;
 }
 
 .btn--red {
@@ -64,6 +65,12 @@
 .btn--white {
   color: var(--text);
   background-color: var(--white);
+  border: 1px solid var(--white);
+
+  &:hover {
+    color: var(--white);
+    background-color: var(--red);
+  }
 }
 
 .btn--grey {

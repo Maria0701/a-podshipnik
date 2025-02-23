@@ -60,3 +60,12 @@
     transform: translate(0,0);
   }
 }
+
+@media (min-width: 1200px) {
+  .about-img__img {
+    width: 1198px;
+    height: 681px;
+    left: 500px;
+    top: -71px;
+  }
+}

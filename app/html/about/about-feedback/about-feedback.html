@@ -1,0 +1,10 @@
+<div class="about-feedback {{className}}">
+  <h2 class="h2 about-feedback__h2">Отзывы</h2>
+  <include src="app/html/utils/feedback-block/feedback-block.html" locals='{"className": "about-feedback__feedback", "text": ""}'></include>
+  <div class="about-feedback__aside">
+    <include
+    src="app/html/utils/open-form/side-form.html"
+    locals='{"className": "about-feedback__form", "name": "Оставить отзыв", "text": ""}'
+  ></include>
+  </div>
+</div>

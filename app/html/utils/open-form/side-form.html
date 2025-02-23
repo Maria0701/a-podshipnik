@@ -1,0 +1,65 @@
+<div class="side-form bg-pink {{className}}">
+  <div class="side-form__top">
+    <div class="side-form__name">{{name}}</div>
+    <if condition="text === ''"></if>
+    <else>
+      <div class="side-form__text">{{text}}</div>
+    </else>
+  </div>
+  <form class="form side-form__form">
+    <div class="form__fieldset">
+      <include locals='{
+      "className": "form__it",
+      "arr": [
+        {
+          "name": "Ваше имя", 
+          "type": "text",
+          "value": "",
+          "adsClass": "",
+          "placeholder": "",
+          "opts": "",
+          "ico": "person"
+        },
+        {
+          "name": "E-mail", 
+          "type": "email",
+          "value": "",
+          "adsClass": "",
+          "placeholder": "",
+          "opts": "",
+          "ico": "email"
+        },
+        {
+          "name": "Номер телефона", 
+          "type": "tel",
+          "value": "",
+          "adsClass": "",
+          "placeholder": "+7 (999) 999 99 99",
+          "opts": "",
+          "ico": "tel"
+        },
+        {
+          "name": "Комментарий", 
+          "type": "textarea",
+          "value": "",
+          "adsClass": "",
+          "placeholder": "",
+          "opts": "",
+          "ico": ""
+        }
+      ]
+    }' src="app/html/utils/label/label.html"></include>
+      <if condition="name === 'Оставить отзыв'">
+        <include  src="app/html/utils/rating/rating.html"></include>
+      </if>
+    </div>
+    <div class="form__btns">
+      <label class="form__agree label-checkbox">
+        <input type="checkbox" name="agree" class="label-checkbox__input">
+        <span class="label-checkbox__text">Я согласен на обработку <a href="#">персональных данных</a></span>
+      </label>
+      <button class="btn btn--rounded btn--red">Отправить</button>
+    </div>
+  </form>
+  </form>
+</div>

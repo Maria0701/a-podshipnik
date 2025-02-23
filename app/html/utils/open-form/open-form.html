@@ -1,0 +1,57 @@
+<div class="open-form bg-pink {{className}}" style="background-image: url(/img/form.png);">
+  <div class="open-form__top">
+    <div class="open-form__name">Не знаете что выбрать? Наш менеджер-консультант поможет определиться</div>
+    <div class="open-form__text">Оставьте свои контактные данные, чтобы мы могли с вами связаться</div>
+  </div>
+  <include
+    src="app/html/utils/form-manager/form-manager.html"
+    locals='{"className": "open-form__manager"}'
+  ></include>
+  <form class="form open-form__form">
+    <div class="form__fieldset form__fieldset--3cols">
+      <include
+        locals='{
+      "className": "form__it",
+      "arr": [
+        {
+          "name": "Ваше имя", 
+          "type": "text",
+          "value": "",
+          "adsClass": "",
+          "placeholder": "",
+          "opts": "",
+          "ico": "person"
+        },
+        {
+          "name": "E-mail", 
+          "type": "email",
+          "value": "",
+          "adsClass": "",
+          "placeholder": "",
+          "opts": "",
+          "ico": "email"
+        },
+        {
+          "name": "Номер телефона", 
+          "type": "tel",
+          "value": "",
+          "adsClass": "",
+          "placeholder": "+7 (999) 999 99 99",
+          "opts": "",
+          "ico": "tel"
+        }
+      ]
+    }'
+        src="app/html/utils/label/label.html"
+      ></include>
+    </div>
+    <div class="form__btns">
+      <label class="form__agree label-checkbox">
+        <input type="checkbox" name="agree" class="label-checkbox__input">
+        <span class="label-checkbox__text">Я согласен на обработку <a href="#">персональных данных</a></span>
+      </label>
+      <button class="btn btn--rounded btn--red">Отправить</button>
+    </div>
+  </form>
+  </form>
+</div>

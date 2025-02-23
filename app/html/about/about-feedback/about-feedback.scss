@@ -1,0 +1,23 @@
+.about-feedback {
+  display:grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 20px;
+}
+
+@media (min-width: $desktop) {
+  .about-feedback {
+    grid-template-columns: minmax(0, 1fr) 345px;
+    gap: 20px;
+  }
+  
+
+  .about-feedback__h2 {
+    grid-column: 1/-1;
+  }
+
+  .about-feedback__form {
+    position: sticky;
+    top: 0;
+    width: 100%;
+  }
+}
