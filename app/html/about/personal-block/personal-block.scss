@@ -1,4 +1,5 @@
 .personal-block {
+  position: relative;
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   gap: 40px;
@@ -6,6 +7,20 @@
   padding: 10px;
   color: var(--white);
   border-radius: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -14px;
+    right: 100px;
+    width: 784px;
+    height: 823px;
+    opacity: 0.2;
+    background-image: url(../img/logo-gray.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
 
 .personal-block__left {
@@ -105,20 +120,11 @@
 @media (min-width: $desktop) {
   .personal-block {
     padding: 23px 16px 23px 26px;
-  }
-  
-  .personal-block__rows {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0,1fr));
-  }
 
-  .personal-block__ico  {
-    padding: 47px;
-  }
-
-  .personal-block__left {
-    grid-template-columns: 154px minmax(0, 1fr);
-    column-gap: 60px;
+    &::before {
+      left: 460px;
+      bottom: -327px;
+    }
   }
 
   .personal-block__text {
@@ -126,5 +132,21 @@
     max-width: 552px;
     padding: 33px 48px;
     justify-self: flex-end;
+  }
+}
+
+@media (min-width: 1300px) {
+  .personal-block__left {
+    grid-template-columns: 154px minmax(0, 1fr);
+    column-gap: 60px;
+  }
+
+  .personal-block__rows {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0,1fr));
+  }
+
+  .personal-block__ico  {
+    padding: 47px;
   }
 }
