@@ -8,14 +8,7 @@
 @import "components/form.scss";
 @import "../html/utils/utils.scss";
 @import "../html/header/header.scss";
-@import "../html/index/slider/slide/slide.scss";
-@import "../html/index/slider/slider.scss";
-
-@import "../html/index/items-swiper/items-swiper.scss";
-@import "../html/index/categories/categorie/categorie.scss";
-@import "../html/index/categories/categories.scss";
-@import "../html/index/index-text/index-text.scss";
-@import "../html/index/news-row/news-row.scss";
+@import "../html/index/index.scss";
 @import "../html/footer/cards/cards.scss";
 @import "../html/footer/footer.scss";
 @import "../html/category/view/view.scss";
@@ -29,3 +22,4 @@
 @import "../html/catalogs/catalogs.scss";
 @import "../html/contacts/contacts.scss";
 @import "../html/about/about.scss";
+@import "../html/cart/cart.scss";

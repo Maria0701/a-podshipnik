@@ -9,6 +9,11 @@
   color: var(--text);
   border-radius: 20px;
   text-decoration: none;
+  transition: color 0.3s;
+
+  &:hover {
+    color: var(--red);
+  }
 }
 
 .pages__link--active {

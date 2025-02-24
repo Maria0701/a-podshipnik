@@ -1,6 +1,7 @@
 .btn {
   display: flex;
   align-items: center;
+  flex-shrink: 0;
   gap: 10px;
   color: inherit;
   font-family: inherit;

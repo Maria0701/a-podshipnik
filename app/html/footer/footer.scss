@@ -49,6 +49,11 @@
   color: var(--white);
   text-decoration-style: dashed;
   text-underline-offset: 3px;
+  transition: color;
+
+  &:hover {
+    color: var(--red);
+  }
 }
 
 @media (min-width: $tablet) {
