@@ -77,6 +77,10 @@
 .btn--grey {
   color: var(--grey);
   background-color: var(--light-grey);
+  &:hover {
+    color: var(--white);
+    background-color: var(--red);
+  }
 }
 
 .btn--dark-grey {

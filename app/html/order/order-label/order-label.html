@@ -1,0 +1,20 @@
+<each loop="item in arr">
+  <label class="order-label bg-grey">
+    <span class="order-label__row">
+      <input type="radio" class="order-label__radio" name="{{item.inName}}">
+      <if condition="item.img === ''"></if>
+      <else>
+        <img src="/img/{{item.img}}" class="order-label__img"  alt="" width="191" height="42">
+      </else>
+    </span>
+    <span class="order-label__name">{{item.name}}</span>
+    <if condition="item.text === ''"></if>
+    <else>
+      <span class="order-label__text">{{item.text}}</span>
+    </else>
+    <if condition="item.remark === ''"></if>
+    <else>
+      <span class="order-label__remark">{{item.remark}}</span>
+    </else>
+  </label>
+</each>

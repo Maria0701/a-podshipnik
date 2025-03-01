@@ -24,7 +24,7 @@
 }
 
 .form__fieldset--3cols {
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 .form__it--bordered .label__wrapper {

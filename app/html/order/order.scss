@@ -1,0 +1,33 @@
+@import "order-label/order-label.scss";
+.order-form {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 50px;
+}
+
+.order-form__fieldset {
+  padding: 10px 10px 30px 10px;
+  border-radius: 20px;
+}
+
+.order-form__block{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order-form__name {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.order-form__fieldset {
+  margin-bottom: 0;
+}
+
+@media (min-width: $desktop) {
+  .order-form__fieldset {
+    padding: 20px 20px 30px 20px;
+  }
+}

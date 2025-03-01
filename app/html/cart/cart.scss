@@ -6,3 +6,25 @@
   grid-template-columns: minmax(0, 1fr);
   gap: 15px;
 }
+
+.cart-block {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 40px 20px;
+}
+
+@media (min-width: $desktop) {
+  .cart-block {
+    grid-template-columns: minmax(0, 1fr) 345px;
+  }
+
+  .cart-block__aside {
+    position: relative;
+  }
+
+  .cart-details {
+    position: sticky;
+    top: 0;
+    width: 100%;
+  }
+}

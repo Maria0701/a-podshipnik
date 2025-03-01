@@ -1,0 +1,320 @@
+<include src="app/html/utils/h1/h1.html" locals='{"className": "mb-20", "text": "Оформление заказа"}'></include>
+<div class="cart-block">
+  <div class="cart-block__left">
+    <form class="form order-form">
+      <div class="order-form__block">
+        <div class="form__fieldset form__fieldset--3cols order-form__fieldset bg-white">
+          <include locals='{
+          "className": "form__it form__it--bordered",
+          "arr": [
+            {
+              "name": "Город", 
+              "type": "select",
+              "value": "",
+              "adsClass": "",
+              "placeholder": "",
+              "opts": "",
+              "ico": ""
+            }
+          ]
+        }' src="app/html/utils/label/label.html"></include>
+        </div>
+      </div>
+      <div class="order-form__block">
+        <h2 class="order-form__name">Мои данные</h2>
+        <div class="form__fieldset form__fieldset--3cols order-form__fieldset bg-white">
+          <include locals='{
+          "className": "form__it form__it--bordered",
+          "arr": [
+            {
+              "name": "Имя", 
+              "type": "text",
+              "value": "",
+              "adsClass": "",
+              "placeholder": "",
+              "opts": "",
+              "ico": ""
+            },
+            {
+              "name": "Фамилия", 
+              "type": "text",
+              "value": "",
+              "adsClass": "",
+              "placeholder": "",
+              "opts": "",
+              "ico": ""
+            },
+            {
+              "name": "Отчество", 
+              "type": "text",
+              "value": "",
+              "adsClass": "",
+              "placeholder": "",
+              "opts": "",
+              "ico": ""
+            },
+            {
+              "name": "Номер телефона", 
+              "type": "tel",
+              "value": "",
+              "adsClass": "",
+              "placeholder": "+7 (999) 999 99 99",
+              "opts": "",
+              "ico": ""
+            },
+            {
+              "name": "E-mail", 
+              "type": "email",
+              "value": "",
+              "adsClass": "",
+              "placeholder": "",
+              "opts": "",
+              "ico": ""
+            }
+          ]
+        }' src="app/html/utils/label/label.html"></include>
+        </div>
+      </div>
+      <div class="order-form__block">
+        <h2 class="order-form__name">Данные компании</h2>
+        <div class="form__fieldset form__fieldset--3cols order-form__fieldset bg-white">
+          <include locals='{
+          "className": "form__it form__it--bordered",
+          "arr": [
+            {
+              "name": "Название", 
+              "type": "text",
+              "value": "",
+              "adsClass": "",
+              "placeholder": "",
+              "opts": "",
+              "ico": ""
+            },
+            {
+              "name": "ИНН", 
+              "type": "text",
+              "value": "",
+              "adsClass": "",
+              "placeholder": "",
+              "opts": "",
+              "ico": ""
+            },
+            {
+              "name": "Адрес", 
+              "type": "text",
+              "value": "",
+              "adsClass": "",
+              "placeholder": "",
+              "opts": "",
+              "ico": ""
+            },
+            {
+              "name": "БИК", 
+              "type": "text",
+              "value": "",
+              "adsClass": "",
+              "placeholder": "",
+              "opts": "",
+              "ico": ""
+            },
+            {
+              "name": "р/с", 
+              "type": "text",
+              "value": "",
+              "adsClass": "",
+              "placeholder": "",
+              "opts": "",
+              "ico": ""
+            },
+            {
+              "name": "к/с", 
+              "type": "text",
+              "value": "",
+              "adsClass": "",
+              "placeholder": "",
+              "opts": "",
+              "ico": ""
+            },
+            {
+              "name": "Банк", 
+              "type": "text",
+              "value": "",
+              "adsClass": "",
+              "placeholder": "",
+              "opts": "",
+              "ico": ""
+            }
+          ]
+        }' src="app/html/utils/label/label.html"></include>
+        </div>
+      </div>
+      <div class="order-form__block">
+        <h2 class="order-form__name">Способ получения</h2>
+        <div class="form__fieldset form__fieldset--3cols order-form__fieldset bg-white">
+          <include locals='{
+          "className": "form__it ",
+          "arr": [
+            {
+              "name": "Самовывоз", 
+              "type": "radio",
+              "value": "1",
+              "adsClass": "",
+              "text": "Самовывоз со склада в Санкт-Петербурге по адресу: ул. Типанова, 38, лит. А, пом. 57Н пом. 57Н",
+              "remark": "0 руб.  / 1-2 дня",
+              "img": "logo.svg",
+              "inName": "delivery"
+            },
+            {
+              "name": "Доставка курьером", 
+              "type": "radio",
+              "value": "2",
+              "adsClass": "",
+              "text": "Рассчитывается после указания адреса",
+              "remark": "0 руб.  / 1-2 дня",
+              "img": "logo.svg",
+              "inName": "delivery"
+            },
+            {
+              "name": "Boxberry", 
+              "type": "radio",
+              "value": "3",
+              "adsClass": "",
+              "text": "Рассчитывается после указания адреса",
+              "remark": "1 000 руб.  / 3-4 дня",
+              "img": "boxberry.png",
+              "inName": "delivery"
+            },
+            {
+              "name": "DPD", 
+              "type": "radio",
+              "value": "4",
+              "adsClass": "",
+              "text": "",
+              "remark": "1 000 руб.  / 3-4 дня",
+              "img": "dpdgoup.png",
+              "inName": "delivery"
+            }
+          ]
+        }' src="app/html/order/order-label/order-label.html"></include>
+        </div>
+      </div>
+      <div class="order-form__block">
+        <h2 class="order-form__name">Адрес доставки</h2>
+        <div class="form__fieldset form__fieldset--3cols order-form__fieldset bg-white">
+          <include locals='{
+          "className": "form__it form__it--bordered",
+          "arr": [
+            {
+              "name": "Страна", 
+              "type": "text",
+              "value": "",
+              "adsClass": "",
+              "placeholder": "",
+              "opts": "",
+              "ico": ""
+            },
+            {
+              "name": "Город / населенный пункт", 
+              "type": "text",
+              "value": "",
+              "adsClass": "",
+              "placeholder": "",
+              "opts": "",
+              "ico": ""
+            },
+            {
+              "name": "Улица", 
+              "type": "text",
+              "value": "",
+              "adsClass": "",
+              "placeholder": "",
+              "opts": "",
+              "ico": ""
+            },
+            {
+              "name": "Дом", 
+              "type": "text",
+              "value": "",
+              "adsClass": "",
+              "placeholder": "",
+              "opts": "",
+              "ico": ""
+            },
+            {
+              "name": "Корпус", 
+              "type": "text",
+              "value": "",
+              "adsClass": "",
+              "placeholder": "",
+              "opts": "",
+              "ico": ""
+            },
+            {
+              "name": "Офис", 
+              "type": "text",
+              "value": "",
+              "adsClass": "",
+              "placeholder": "",
+              "opts": "",
+              "ico": ""
+            }
+          ]
+        }' src="app/html/utils/label/label.html"></include>
+        </div>
+      </div>
+      <div class="order-form__block">
+        <h2 class="order-form__name">Способ получения</h2>
+        <div class="form__fieldset form__fieldset--3cols order-form__fieldset bg-white">
+          <include locals='{
+          "className": "form__it ",
+          "arr": [
+            {
+              "name": "Счёт", 
+              "type": "radio",
+              "value": "1",
+              "adsClass": "",
+              "text": "Менеджер подготовит и вышлет счёт на ваш e-mail через 15 минут после получения заказа",
+              "remark": "",
+              "img": "",
+              "inName": "payment"
+            },
+            {
+              "name": "Картой на сайте", 
+              "type": "radio",
+              "value": "2",
+              "adsClass": "",
+              "text": "Предварительная оплата на сайте",
+              "remark": "",
+              "img": "",
+              "inName": "payment"
+            },
+            {
+              "name": "СБП", 
+              "type": "radio",
+              "value": "3",
+              "adsClass": "",
+              "text": "Рассчитывается после указания адреса",
+              "remark": "",
+              "img": "",
+              "inName": "payment"
+            },
+            {
+              "name": "При получении", 
+              "type": "radio",
+              "value": "4",
+              "adsClass": "",
+              "text": "Вы можете оплатить заказ картой или наличными",
+              "remark": "",
+              "img": "",
+              "inName":  "payment"
+            }
+          ]
+        }' src="app/html/order/order-label/order-label.html"></include>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="cart-block__aside">
+    <include src="app/html/cart/cart-details/cart-details.html"></include>
+  </div>
+</div>

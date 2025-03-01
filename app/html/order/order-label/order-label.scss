@@ -1,0 +1,52 @@
+.order-label {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 15px 25px 15px;
+  border-radius: 20px;
+}
+
+.order-label__name {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.order-label__text {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.order-label__remark {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.order-label__row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.order-label__radio {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  background-color: var(--white);
+  border-radius: 50%;
+  border: 4px solid var(--white);
+
+  &:checked {
+    background-color: var(--red);
+  }
+}
+
+.order-label__row {
+  margin-bottom: 20px;
+}
+
+.order-label__img {
+  max-height: 30px;
+  width:auto
+}
