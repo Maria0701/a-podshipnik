@@ -1,0 +1,46 @@
+.mistake-page {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 100px;
+  padding-inline: 20px;
+  text-align: center;
+
+  ::before {
+    content: "";
+    position: absolute;
+    top: -142px;
+    left: -100px;
+    z-index: -1;
+    width: calc(100% + 100px);
+    height: calc(100% + 220px);
+    opacity: 0.2;
+    background-image: url(../img/logo-small.svg);
+    background-position: center right;
+    background-size: 1191px 1320px;
+    background-repeat: no-repeat;
+  }
+}
+
+.mistake-page__center {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 650px;
+}
+
+.mistake-page__img {
+  margin-bottom: 80px;
+}
+
+.mistake-page__name {
+  margin-bottom: 20px;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.mistake-page__text {
+  margin-bottom: 35px;
+}
