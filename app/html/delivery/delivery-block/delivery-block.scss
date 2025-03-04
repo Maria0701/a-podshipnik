@@ -1,4 +1,4 @@
-.delivery-block__ico  {
+.delivery-info__ico  {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,7 +9,7 @@
   border-radius: 20px;
 }
 
-.delivery-block {
+.delivery-info {
   display: grid;
   grid-template-columns: 60px 1fr;
   gap: 20px;
@@ -17,14 +17,14 @@
   border-radius: 20px;
 }
 
-.delivery-block__name {
+.delivery-info__name {
   margin-top: 0;
   margin-bottom: 20px;
   font-size: 18px;
   font-weight: 700;
 }
 
-.delivery-block__list {
+.delivery-info__list {
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -81,7 +81,7 @@
 }
 
 @media (min-width: $desktop) {
-  .delivery-block {
+  .delivery-info {
     padding: 30px;
   }
 }
