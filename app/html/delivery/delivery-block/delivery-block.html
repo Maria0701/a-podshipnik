@@ -1,0 +1,21 @@
+<each loop="item in arr">
+  <div class="delivery-block bg-white">
+    <div class="delivery-block__ico ">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="30" aria-hidden="true">
+        <use xlink:href="../img/sprite.svg#{{item.ico}}"></use>
+      </svg>
+    </div>
+    <div class="delivery-block__content">
+      <h2 class="delivery-block__name">{{item.name}}</h2>
+      <ul class="delivery-block__list">
+        <each loop="it in item.arr">
+          <li class="delivery-it">
+            <div class="delivery-it__name">{{it.img}}</div>
+            <div class="delivery-it__text">{{it.text}}</div>
+            <div class="delivery-it__price">{{it.price}}</div>
+          </li>
+        </each>
+      </ul>
+    </div>
+  </div>
+</each>
