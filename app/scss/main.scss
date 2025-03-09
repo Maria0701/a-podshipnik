@@ -77,6 +77,11 @@ select {
   max-width: $container;
   padding-inline: var(--padding);
   margin: 0 auto;
+  min-width: 0;
+
+  .container {
+    padding-inline: 0;
+  }
 }
 
 .overlay {

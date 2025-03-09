@@ -7,6 +7,7 @@
   padding: 10px;
   color: var(--white);
   border-radius: 20px;
+  overflow: hidden;
 
   &::before {
     content: "";
@@ -26,7 +27,7 @@
 .personal-block__left {
   display: grid;
   grid-template-columns: 60px minmax(0, 1fr);
-  gap: 20px 17px
+  gap: 20px 17px;
 }
 
 .personal-block__ico {
@@ -37,7 +38,6 @@
   padding: 18px;
   color: var(--red);
   border-radius: 20px;
-
 }
 
 .personal-block__name {
@@ -45,7 +45,7 @@
   font-weight: 700;
 }
 
-.personal-block__rows{
+.personal-block__rows {
   grid-column: 1/-1;
   display: flex;
   flex-wrap: wrap;
@@ -89,7 +89,7 @@
     align-items: flex-start;
   }
 
-  .personal-block__ico  {
+  .personal-block__ico {
     grid-column: 1;
     grid-row: 1/4;
     padding: 40px;
@@ -143,10 +143,10 @@
 
   .personal-block__rows {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0,1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .personal-block__ico  {
+  .personal-block__ico {
     padding: 47px;
   }
 }

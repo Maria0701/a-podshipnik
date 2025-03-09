@@ -1,3 +1,4 @@
+import { SliderTable } from "./components/compare-slider.js";
 import { fixHashes } from "./components/fixHashes.js";
 import { MenuHandler } from "./components/menu-opener.js";
 import { phoneMask } from "./components/phone-mask.js";
@@ -169,3 +170,8 @@ try {
 } catch (e) {
   console.log(e);
 }
+
+let comparePageInstanse = null;
+if (window.location.href.includes('/compare')) {
+  comparePageInstanse = new SliderTable({ containerClass: 'compare-slider' });
+};

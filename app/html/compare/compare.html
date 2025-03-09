@@ -1,0 +1,631 @@
+<!-- https://codepen.io/Shouting_Lime/pen/dOwQjv -->
+
+  <div class="container">
+    <h1 class="h1 mb-18">Сравнение товаров</h1>
+    <div class="compare-page" data-name="compare-slider">
+      <div class="compare-table__slider compare-slider">
+        <input type="range" name="range" min="0" max="5" class="compare-slider__slider" value="0"
+          data-input="compare-slider">
+      </div>
+      <form class="compare-form filter">
+        <div class="filter__fieldset">
+          <label class="label-checkbox">
+            <input type="radio" value="all" name="compare-filters" class="label-checkbox__input" checked="">
+            <span>Все характеристики</span>
+          </label>
+          <label class="label-checkbox">
+            <input type="radio" value="diff" name="compare-filters" class="label-checkbox__input">
+            <span>Только различия</span>
+          </label>
+          <label class="label-checkbox">
+            <input type="checkbox" value="3" name="fixrow" class="label-checkbox__input">
+            <span>Закрепить область с названием</span>
+          </label>
+        </div>
+        <button type="reset" class="btn btn--rounded btn--red">
+          <span>Очистить список</span>
+          <svg class="" fill="none" width="8" height="8">
+            <use xlink:href="img/sprite.svg#cross"></use>
+          </svg>
+
+        </button>
+      </form>
+      <div class="compare-table">
+        <div class="compare-table__wrapper">
+          <div data-container="compare-slider" class="compare-table__container">
+            <table class="compare-table__table">
+              <tr>
+                <td class="compare-table__td--first compare-table__td compare-table__td--pic">
+                  <div class="compare-table__name"></div>
+                </td>
+                <td class="compare-table__td--pic compare-table__td js-compare-td" data-td="compare-slider">
+                  <div class="catalog-element compare-table__element">
+                    <div class="catalog-element__top">
+                      <div class="catalog-element__actions-list">
+                        <button class="btn btn--action catalog-action--del">
+                          <svg class="catalog-action__icon" fill="none" width="16" height="16">
+                            <use xlink:href="img/sprite.svg#cross"></use>
+                          </svg>
+                        </button>
+                        <button class="btn btn--action">
+                          <svg class="catalog-action__icon" fill="none" width="16" height="16">
+                            <use xlink:href="img/sprite.svg#compare"></use>
+                          </svg>
+                        </button>
+                        <button class="btn btn--action">
+                          <svg class="catalog-action__icon" fill="none" width="16" height="16">
+                            <use xlink:href="img/sprite.svg#heart"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <a href="/item.html" class="catalog-element__center">
+                      <img src="img/cat1.png" alt="" class="catalog-element__image" width="186" height="186">
+                    </a>
+                    <div class="catalog-element__bottom">
+                      <button type="submit" class="btn btn--rounded btn--red">
+
+                        <svg class="btn__icon" fill="none" width="16" height="16">
+                          <use xlink:href="img/sprite.svg#buy"></use>
+                        </svg>
+                        <span>В корзину
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </td>
+                <td class="compare-table__td--pic compare-table__td js-compare-td" data-td="compare-slider">
+                  <div class="catalog-element compare-table__element">
+                    <div class="catalog-element__top">
+                      <div class="catalog-element__actions-list">
+                        <button class="btn btn--action catalog-action--del">
+                          <svg class="catalog-action__icon" fill="none" width="16" height="16">
+                            <use xlink:href="img/sprite.svg#cross"></use>
+                          </svg>
+                        </button>
+                        <button class="btn btn--action">
+                          <svg class="catalog-action__icon" fill="none" width="16" height="16">
+                            <use xlink:href="img/sprite.svg#compare"></use>
+                          </svg>
+                        </button>
+                        <button class="btn btn--action">
+                          <svg class="catalog-action__icon" fill="none" width="16" height="16">
+                            <use xlink:href="img/sprite.svg#heart"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <a href="/item.html" class="catalog-element__center">
+                      <img src="img/cat2.png" alt="" class="catalog-element__image" width="186" height="186">
+                    </a>
+                    <div class="catalog-element__bottom">
+                      <button type="submit" class="btn btn--rounded btn--red">
+
+                        <svg class="btn__icon" fill="none" width="16" height="16">
+                          <use xlink:href="img/sprite.svg#buy"></use>
+                        </svg>
+                        <span>В корзину
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </td>
+                <td class="compare-table__td--pic compare-table__td js-compare-td" data-td="compare-slider">
+                  <div class="catalog-element compare-table__element">
+                    <div class="catalog-element__top">
+                      <div class="catalog-element__actions-list">
+                        <button class="btn btn--action catalog-action--del">
+                          <svg class="catalog-action__icon" fill="none" width="16" height="16">
+                            <use xlink:href="img/sprite.svg#cross"></use>
+                          </svg>
+                        </button>
+                        <button class="btn btn--action">
+                          <svg class="catalog-action__icon" fill="none" width="16" height="16">
+                            <use xlink:href="img/sprite.svg#compare"></use>
+                          </svg>
+                        </button>
+                        <button class="btn btn--action">
+                          <svg class="catalog-action__icon" fill="none" width="16" height="16">
+                            <use xlink:href="img/sprite.svg#heart"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <a href="/item.html" class="catalog-element__center">
+                      <img src="img/cat3.png" alt="" class="catalog-element__image" width="186" height="186">
+                    </a>
+                    <div class="catalog-element__bottom">
+                      <button type="submit" class="btn btn--rounded btn--red">
+
+                        <svg class="btn__icon" fill="none" width="16" height="16">
+                          <use xlink:href="img/sprite.svg#buy"></use>
+                        </svg>
+                        <span>В корзину
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </td>
+                <td class="compare-table__td--pic compare-table__td js-compare-td" data-td="compare-slider">
+                  <div class="catalog-element compare-table__element">
+                    <div class="catalog-element__top">
+                      <div class="catalog-element__actions-list">
+                        <button class="btn btn--action catalog-action--del">
+                          <svg class="catalog-action__icon" fill="none" width="16" height="16">
+                            <use xlink:href="img/sprite.svg#cross"></use>
+                          </svg>
+                        </button>
+                        <button class="btn btn--action">
+                          <svg class="catalog-action__icon" fill="none" width="16" height="16">
+                            <use xlink:href="img/sprite.svg#compare"></use>
+                          </svg>
+                        </button>
+                        <button class="btn btn--action">
+                          <svg class="catalog-action__icon" fill="none" width="16" height="16">
+                            <use xlink:href="img/sprite.svg#heart"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <a href="/item.html" class="catalog-element__center">
+                      <img src="img/cat4.png" alt="" class="catalog-element__image" width="186" height="186">
+                    </a>
+                    <div class="catalog-element__bottom">
+                      <button type="submit" class="btn btn--rounded btn--red">
+
+                        <svg class="btn__icon" fill="none" width="16" height="16">
+                          <use xlink:href="img/sprite.svg#buy"></use>
+                        </svg>
+                        <span>В корзину
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </td>
+                <td class="compare-table__td--pic compare-table__td js-compare-td" data-td="compare-slider">
+                  <div class="catalog-element compare-table__element">
+                    <div class="catalog-element__top">
+                      <div class="catalog-element__actions-list">
+                        <button class="btn btn--action catalog-action--del">
+                          <svg class="catalog-action__icon" fill="none" width="16" height="16">
+                            <use xlink:href="img/sprite.svg#cross"></use>
+                          </svg>
+                        </button>
+                        <button class="btn btn--action">
+                          <svg class="catalog-action__icon" fill="none" width="16" height="16">
+                            <use xlink:href="img/sprite.svg#compare"></use>
+                          </svg>
+                        </button>
+                        <button class="btn btn--action">
+                          <svg class="catalog-action__icon" fill="none" width="16" height="16">
+                            <use xlink:href="img/sprite.svg#heart"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <a href="/item.html" class="catalog-element__center">
+                      <img src="img/cat5.png" alt="" class="catalog-element__image" width="186" height="186">
+                    </a>
+                    <div class="catalog-element__bottom">
+                      <button type="submit" class="btn btn--rounded btn--red">
+
+                        <svg class="btn__icon" fill="none" width="16" height="16">
+                          <use xlink:href="img/sprite.svg#buy"></use>
+                        </svg>
+                        <span>В корзину
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </td>
+                <td class="compare-table__td--pic compare-table__td js-compare-td" data-td="compare-slider">
+                  <div class="catalog-element compare-table__element">
+                    <div class="catalog-element__top">
+                      <div class="catalog-element__actions-list">
+                        <button class="btn btn--action catalog-action--del">
+                          <svg class="catalog-action__icon" fill="none" width="16" height="16">
+                            <use xlink:href="img/sprite.svg#cross"></use>
+                          </svg>
+                        </button>
+                        <button class="btn btn--action">
+                          <svg class="catalog-action__icon" fill="none" width="16" height="16">
+                            <use xlink:href="img/sprite.svg#compare"></use>
+                          </svg>
+                        </button>
+                        <button class="btn btn--action">
+                          <svg class="catalog-action__icon" fill="none" width="16" height="16">
+                            <use xlink:href="img/sprite.svg#heart"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <a href="/item.html" class="catalog-element__center">
+                      <img src="img/cat1.png" alt="" class="catalog-element__image" width="186" height="186">
+                    </a>
+                    <div class="catalog-element__bottom">
+                      <button type="submit" class="btn btn--rounded btn--red">
+
+                        <svg class="btn__icon" fill="none" width="16" height="16">
+                          <use xlink:href="img/sprite.svg#buy"></use>
+                        </svg>
+                        <span>В корзину
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="compare-table__td--info compare-table__td compare-table__td--first">
+                  <div class="compare-table__name">Название</div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-name">
+                  <div class="compare-table__info" data-content="Название">
+                    Картридж с лентой TZe-111 совместимый, 6 мм, чёрный на прозрачном
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-name">
+                  <div class="compare-table__info" data-content="Название">
+                    Картридж с лентой TZe-111 совместимый, 6 мм, чёрный на прозрачном
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-name">
+                  <div class="compare-table__info" data-content="Название">
+                    Картридж с лентой TZe-111 совместимый, 6 мм
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-name">
+                  <div class="compare-table__info" data-content="Название">
+                    Картридж с лентой TZe-111 совместимый, 6 мм, чёрный на прозрачном
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-name">
+                  <div class="compare-table__info" data-content="Название">
+                    Картридж с лентой TZe-111 совместимый, чёрный на прозрачном
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-name">
+                  <div class="compare-table__info" data-content="Название">
+                    Картридж с лентой TZe-111,
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="compare-table__td--info compare-table__td compare-table__td--first">
+                  <div class="compare-table__name">Цена</div>
+                </td>
+                <td class="compare-table__td--info compare-table__td  js-compare-td">
+                  <div class="compare-table__info" data-content="Цена">
+                    70 000 ₽
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Цена">
+                    70 000 ₽
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Цена">
+                    70 000 ₽
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Цена">
+                    70 000 ₽
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Цена">
+                    70 000 ₽
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Цена">
+                    70 000 ₽
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="compare-table__td--info compare-table__td compare-table__td--first">
+                  <div class="compare-table__name">Цена без скидки</div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Цена без скидки">
+                    <div class="price-old price-old--dark">70 000 ₽</div>
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Цена без скидки">
+                    <div class="price-old price-old--dark">70 000 ₽</div>
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Цена без скидки">
+                    <div class="price-old price-old--dark">70 000 ₽</div>
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Цена без скидки">
+                    <div class="price-old price-old--dark">70 000 ₽</div>
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Цена без скидки">
+                    <div class="price-old price-old--dark">70 000 ₽</div>
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Цена без скидки">
+                    <div class="price-old price-old--dark">70 000 ₽</div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="compare-table__td--info compare-table__td compare-table__td--first">
+                  <div class="compare-table__name">Комплектация</div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info text" data-content="Комплектация">
+                    <ul>
+                      <li>Гайковерт</li>
+                      <li>Аккумулятор</li>
+                      <li>Зарядное устройство</li>
+                      <li>Скоба поясная</li>
+                      <li>Инструкции по безопасности</li>
+                      <li>Руководство по эксплуатации</li>
+                      <li>Кейс</li>
+                    </ul>
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Комплектация">
+                    -
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info text" data-content="Комплектация">
+                    <ul>
+                      <li>Гайковерт</li>
+                      <li>Аккумулятор</li>
+                      <li>Зарядное устройство</li>
+                      <li>Кейс</li>
+                    </ul>
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Комплектация">
+                    -
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Комплектация">
+                    -
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info text" data-content="Комплектация">
+                    <ul>
+                      <li>Гайковерт</li>
+                      <li>Аккумулятор</li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="compare-table__td--info compare-table__td compare-table__td--first">
+                  <div class="compare-table__name">Наличие</div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Наличие">
+                    <div class="availability">
+                      В наличии
+                    </div>
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Наличие">
+                    В наличии
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Наличие">
+                    В наличии
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Наличие">
+                    В наличии
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Наличие">
+                    В наличии
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Наличие">
+                    В наличии
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="compare-table__td--info compare-table__td compare-table__td--first">
+                  <div class="compare-table__name">Единица измерения</div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Единица измерения">
+                    Упаковка
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Единица измерения">
+                    Упаковка
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Единица измерения">
+                    Упаковка
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Единица измерения">
+                    Упаковка
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Единица измерения">
+                    Упаковка
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Единица измерения">
+                    Упаковка
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="compare-table__td--info compare-table__td compare-table__td--first">
+                  <div class="compare-table__name">Бренд</div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Бренд">
+                    Producer
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Бренд">
+                    Producer
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Бренд">
+                    Producer
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Бренд">
+                    Producer
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Бренд">
+                    Producer
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Бренд">
+                    Producer
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="compare-table__td--info compare-table__td compare-table__td--first">
+                  <div class="compare-table__name">Количество в упаковке</div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Количество в упаковке">
+                    -
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Количество в упаковке">
+                    9 метров
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Количество в упаковке">
+                    10 шт
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Количество в упаковке">
+                    -
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Количество в упаковке">
+                    10 метров
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Количество в упаковке">
+                    1 шт.
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="compare-table__td--info compare-table__td compare-table__td--first">
+                  <div class="compare-table__name">Стоимость 1 метра</div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Стоимость 1 метра">
+                    11 000 р
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Стоимость 1 метра">
+                    11 000 р
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Стоимость 1 метра">
+                    11 000 р
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Стоимость 1 метра">
+                    11 000 р
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Стоимость 1 метра">
+                    11 000 р
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Стоимость 1 метра">
+                    11 000 р
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="compare-table__td--info compare-table__td compare-table__td--first">
+                  <div class="compare-table__name">Диаметр</div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Диаметр">
+                    57 см
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Диаметр">
+                    57 см
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Диаметр">
+                    57 см
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Диаметр">
+                    57 см
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Диаметр">
+                    57 см
+                  </div>
+                </td>
+                <td class="compare-table__td--info compare-table__td js-compare-td">
+                  <div class="compare-table__info" data-content="Диаметр">
+                    57 см
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
