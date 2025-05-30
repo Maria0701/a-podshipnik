@@ -1,0 +1,25 @@
+<div class="small-login__block">
+  <div class="small-login__wrapper">
+    <div class="small-login__inside">
+      <form class="form small-login__form" action="/users/" enctype="multipart/form-data" method="POST">
+        <label class="label form__it form__it--bordered  ">
+          <span class="label__wrapper">
+            <input class="label__input" type="text" name="login" placeholder="">
+          </span>
+          <span class="label__name">Логин</span>
+        </label>
+        <label class="label form__it form__it--bordered  ">
+          <span class="label__wrapper">
+            <input class="label__input" type="password" placeholder="Пароль" name="password">
+          </span>
+          <span class="label__name">Пароль</span>
+          <a href="/users/restore_password/">Забыли?</a>
+        </label>
+        <div class="small-login__btns">
+          <button class="btn btn--red btn--rounded" type="submit" name="apply" value="apply">Войти</button>
+          <a href="/users/registration/" class="registration-link">Зарегистрироваться</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

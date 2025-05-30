@@ -1,0 +1,57 @@
+.small-login {
+  position: relative;
+
+  &:hover {
+    .small-login__block {
+      z-index: 5;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+
+.small-login__block {
+  position: absolute;
+  top: calc(100% - 1px);
+  right: 0;
+  z-index: -5;
+  opacity: 0;
+  visibility: hidden;
+  transition: z-index, 0.3s, visibility 0.3s, opacity 0.3s;
+}
+
+.small-login__wrapper {
+  padding-top: 8px;
+
+}
+
+.small-login__inside {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--white);
+  padding: 30px 20px;
+  width: 300px;
+  border-radius: 20px;
+  filter: drop-shadow(6px 4px 12px rgba(0, 0, 0, .35));
+
+  a {
+    color: var(--red);
+    text-decoration-style: dashed;
+    text-underline-offset: 3px;
+    transition: color;
+  }
+}
+
+.small-login__form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.small-login__btns {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+}
