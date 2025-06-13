@@ -6,6 +6,7 @@ import { Popup } from "./components/popups.js";
 import {
   initializeBannersSlider,
   initializeBrandsSlider,
+  initializeItemSlider,
   initializeMainSlider,
 } from "./components/swipers.js";
 import { YmapsInitializer } from "./components/yandex.js";
@@ -59,7 +60,7 @@ if (goodsSlider.length) {
       sliderElt: item,
       className: ".items-swiper",
       numberOfSlides: 5,
-      slideClass: 'short-card'
+      slideClass: 'short-card',
     })
   );
 }
@@ -70,6 +71,7 @@ if (catsSlider) {
     sliderElt: catsSlider,
     className: ".categories-sw",
     numberOfSlides: 4,
+    slideClass: 'categories-it'
   });
 }
 
@@ -96,9 +98,9 @@ try {
     // sendForm(form, popup);
   };
 
-  const onOpenCallback = async (popup) => {};
+  const onOpenCallback = async (popup) => { };
 
-  const onCloseCallback = (popup) => {};
+  const onCloseCallback = (popup) => { };
 
   if (popupOpeners.length > 0) {
     const popupHandler = (evt) => {
@@ -176,3 +178,11 @@ let comparePageInstanse = null;
 if (window.location.href.includes('/compare')) {
   comparePageInstanse = new SliderTable({ containerClass: 'compare-slider' });
 };
+
+const itemSwiper = document.querySelector('.js-item-swiper');
+if (itemSwiper) {
+  initializeItemSlider({
+    sliderElt: itemSwiper,
+    className: '.js-item-swiper'
+  })
+}

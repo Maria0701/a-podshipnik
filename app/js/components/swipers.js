@@ -1,6 +1,6 @@
 import Swiper from "swiper";
-import { Navigation, Pagination, Autoplay, EffectFade } from "swiper/modules";
-Swiper.use([Navigation, Pagination, Autoplay, EffectFade]);
+import { Navigation, Pagination, Autoplay, EffectFade, Thumbs } from "swiper/modules";
+Swiper.use([Navigation, Pagination, Autoplay, EffectFade, Thumbs]);
 
 export const initializeMainSlider = ({ sliderElt, className }) => {
   const slider = sliderElt.querySelector(`${className}__slider`);
@@ -52,7 +52,7 @@ export const initializeBrandsSlider = ({ sliderElt, className, numberOfSlides, s
     spaceBetween: 20,
     breakpoints: {
       1420: {
-        slidesPerView: numberOfSlides ,
+        slidesPerView: numberOfSlides,
       },
     },
     navigation: {
@@ -64,3 +64,28 @@ export const initializeBrandsSlider = ({ sliderElt, className, numberOfSlides, s
 };
 
 
+
+export const initializeItemSlider = ({ sliderElt, className }) => {
+  const slider = sliderElt.querySelector(`${className}__slider`);
+  if (!slider) return;
+  const jsThumbs = sliderElt.querySelector(`${className}__thumbs`);
+  const thumbsSwiper = new Swiper(jsThumbs, {
+    slidesPerView: 'auto',
+    direction: 'vertical',
+    spaceBetween: 15,
+    mousewheel: true,
+    // watchSlidesProgress: true,
+  });
+
+  const mySwiper = new Swiper(slider, {
+    slidesPerView: 1,
+    effect: "fade",
+    fadeEffect: {
+      crossFade: true,
+    },
+    thumbs: {
+      swiper: thumbsSwiper,
+    }
+  });
+
+};
