@@ -41,7 +41,7 @@ export const initializeBannersSlider = ({ sliderElt, className }) => {
   });
 };
 
-export const initializeBrandsSlider = ({ sliderElt, className, numberOfSlides }) => {
+export const initializeBrandsSlider = ({ sliderElt, className, numberOfSlides, slideClass }) => {
   const slider = sliderElt.querySelector(`${className}__slider`);
   if (!slider) return;
   const nextElt = sliderElt.querySelector(".btn--right");
@@ -59,6 +59,7 @@ export const initializeBrandsSlider = ({ sliderElt, className, numberOfSlides })
       nextEl: nextElt,
       prevEl: prevElt,
     },
+    slideClass: slideClass ? slideClass : 'swiper-slide'
   });
 };
 

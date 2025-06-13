@@ -59,6 +59,7 @@ if (goodsSlider.length) {
       sliderElt: item,
       className: ".items-swiper",
       numberOfSlides: 5,
+      slideClass: 'short-card'
     })
   );
 }

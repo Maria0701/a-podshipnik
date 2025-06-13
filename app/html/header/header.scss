@@ -1,6 +1,7 @@
 @import "top-menu/top-menu.scss";
 @import "users/users-it/users-it.scss";
 @import "users/users.scss";
+
 .header {
   display: flex;
   flex-direction: column;
@@ -28,14 +29,15 @@
     flex-basis: 100%;
   }
 
-  .header__catalog-toggler.opened {
-  }
+  .header__catalog-toggler.opened {}
 }
+
 @media (min-width: $desktop) {
   .header__catalog-toggler {
     display: none;
   }
 }
+
 @media (max-width: calc($container - 1px)) {
   .header__top-menu {
     position: absolute;
@@ -45,14 +47,17 @@
     padding-top: 14px;
     width: 100%;
     order: 3;
+    height: calc(100svh - 301px);
+    overflow-y: auto;
     background-color: var(--grey);
     transform: translate3d(-200svw, 0, 0);
     transition: transform 0.3s;
+    overscroll-behavior: contain;
   }
-
+  
   .header__top {
     position: absolute;
-    top: 200px;
+    top: calc(100svh - 281px);
     left: 0;
     width: 100%;
     order: 1;
@@ -72,12 +77,30 @@
     }
   }
 
+  @media (min-width: $desktop) {
+    .header__top-menu {
+      height: 200px;
+    }
+
+    .header__top {
+      top: calc(100svh - 200px);
+      width: calc(100% - var(--left-size));
+    }
+
+    .header__top-menu {
+      width: calc(100% - var(--left-size));
+      height: calc(100svh - 240px);
+      overflow-y: auto;
+
+    }
+  }
+
   .header__mobile-logo {
     display: none;
     flex-shrink: 0;
     width: 30px;
     height: 30px;
-    margin-right: 220px;
+    margin-right: 200px;
   }
 
   .header__mobile-btns {
@@ -88,6 +111,7 @@
 
   .header.menu-opened {
     z-index: 11;
+
     .header__top-menu,
     .header__top {
       transform: translate3d(var(--left-size), 0, 0);
@@ -100,7 +124,7 @@
 
     .header__catalog-toggler {
       position: absolute;
-      left: 56px;
+      left: 46px;
       top: 4px;
       z-index: 11;
     }
@@ -159,6 +183,7 @@
 
   .header__search {
     flex-grow: 1;
+
     .search {
       max-height: 50px;
     }
