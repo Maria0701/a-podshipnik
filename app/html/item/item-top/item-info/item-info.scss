@@ -32,12 +32,16 @@
 }
 
 .item-info__price {
+  display: flex;
+  align-items: last baseline;
   font-weight: 700;
   margin-bottom: 15px;
-  span {
+ 
+}
+
+.price-new {
     font-size: 20px;
   }
-}
 
 .item-info__qty {
   width: 140px;

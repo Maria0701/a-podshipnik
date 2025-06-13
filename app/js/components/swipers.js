@@ -74,7 +74,7 @@ export const initializeItemSlider = ({ sliderElt, className }) => {
     direction: 'vertical',
     spaceBetween: 15,
     mousewheel: true,
-    // watchSlidesProgress: true,
+    watchSlidesProgress: true,
   });
 
   const mySwiper = new Swiper(slider, {

@@ -54,3 +54,25 @@
     font-size: 24px;
   }
 }
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 10px;
+  padding-top: 10px;
+}
+
+.tags__it {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 10px;
+  border-radius: 15px;
+  background-color: var(--light-grey);
+}
+
+@media (hover:hover) {
+  .tags__it:hover {
+    background-color: var(--blue-grey);
+  }
+}
