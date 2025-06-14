@@ -1,6 +1,6 @@
 .delivery-row {
   display: grid;
-  grid-template-columns: 20px 107px 2fr 1fr 1fr;
+  grid-template-columns: 20px 107px 1fr 1fr;
   gap: 20px;
   align-items: center;
   padding: 16px 11px;
@@ -30,6 +30,17 @@
 }
 
 .delivery-row__name {
+  display: none;
   font-size: 16px;
   font-weight: 700;
+}
+
+@media (min-width: 520px) {
+  .delivery-row__name {
+    display: flex;
+  }
+
+  .delivery-row {
+  grid-template-columns: 20px 107px 2fr 1fr 1fr;
+  }
 }

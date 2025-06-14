@@ -86,18 +86,39 @@
   }
 }
 
+.label-checkbox__input--grey {
+  background-color: var(--light-grey);
+}
+
 .label-checkbox__input[type="radio"] {
   border-radius: 20px;
 
   &:checked {
     background-size: 28px;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 31.955 31.955'%3E%3Ccircle cx='15.979' cy='15.977' r='6.117' fill='%23a80000'/%3E%3C/svg%3E");
-    
+
   }
 }
 
 @media (min-width: $desktop) {
   .label__wrapper {
     min-height: 40px;
+  }
+}
+
+.captcha__more {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.captcha {
+  display: flex;
+  // flex-wrap: wrap;
+  gap: 8px;
+
+  img {
+    max-width: 130px;
   }
 }

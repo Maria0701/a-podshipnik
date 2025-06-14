@@ -4,6 +4,10 @@
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 10px 50px;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 
 .form__agree {

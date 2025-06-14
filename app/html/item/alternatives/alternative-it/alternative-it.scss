@@ -1,13 +1,14 @@
-.alternative{
+.alternative {
   display: grid;
-  grid-template-columns: minmax(0,1fr) 100px 140px;
-  gap: 20px;
-  padding:8px 14px 10px 14px;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 10px;
+  padding: 8px 14px 10px 14px;
   font-size: 16px;
   color: var(--text);
   text-decoration: none;
   border-radius: 20px;
 }
+
 
 .alternative__name {
   font-weight: 700;
@@ -18,18 +19,30 @@
   color: var(--red);
   text-decoration: dashed underline var(--light-red-op);
   text-underline-offset: 2px;
-  
+
 }
 
 .alternative--head {
+  display: none;
   padding: 0;
   font-size: 14px;
 }
 
 @media (hover:hover) {
-  .alternative:hover{
+  .alternative:hover {
     .alternative__name {
       color: var(--red);
     }
+  }
+}
+
+@media (min-width:520px) {
+  .alternative {
+    grid-template-columns: minmax(0, 1fr) 100px 140px;
+      gap: 20px;
+  }
+
+  .alternative--head {
+    display: grid;
   }
 }

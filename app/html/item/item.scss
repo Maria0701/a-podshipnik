@@ -40,6 +40,21 @@
 }
 
 
+.item-content__stats {
+  display: flex;
+  align-items: center;
+  gap:10px;
+  margin-bottom: 10px;
+}
+
+.item-content__average {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+
+
 @media (min-width: $desktop) {
   .item-content__blocks {
     row-gap: 60px;
