@@ -65,6 +65,7 @@
 @media (min-width: $tablet) {
   .news-top {
     grid-template-columns: 345px minmax(0, 1fr);
+    grid-column: 1/-1;
   }
 }
 
